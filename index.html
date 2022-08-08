@@ -13,8 +13,10 @@
     <title>Proyecto cine</title>
 </head>
 
-<body style="height: 2000px;">
+<body>
+    <!-- CABECERA INICIO-->
     <header>
+        <!-- NAVBAR INICIO-->
         <section class="navbarCine">
             <nav class="navbar fixed-top navbar-expand-lg navbar-light">
                 <a class="navbar-brand text-light fw-bolder" href="#">
@@ -29,8 +31,9 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item dropdown mx-5">
-                                <a class="nav-link dropdown-toggle text-light fw-bolder bg-danger rounded-pill p-3" href="#" id="navbarDropdown"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle text-light fw-bolder bg-danger rounded-pill p-3"
+                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     Peliculas
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -40,11 +43,13 @@
                                 </ul>
                             </li>
                             <li class="nav-item mx-5">
-                                <a class="nav-link active text-light fw-bolder bg-danger rounded-pill p-3" aria-current="page" href="#">Acerca de
+                                <a class="nav-link active text-light fw-bolder bg-danger rounded-pill p-3"
+                                    aria-current="page" href="#">Acerca de
                                     Nosotros</a>
                             </li>
                             <li class="nav-item mx-5">
-                                <a class="nav-link text-light fw-bolder bg-danger rounded-pill p-3" aria-current="page" href="#">Contacto</a>
+                                <a class="nav-link text-light fw-bolder bg-danger rounded-pill p-3" aria-current="page"
+                                    href="#">Contacto</a>
                             </li>
                         </ul>
                         <button class="btn btn-danger mx-2" type="button">Suscripcion</button>
@@ -53,6 +58,8 @@
                 </div>
             </nav>
         </section>
+        <!-- NAVBAR FIN-->
+        <!-- CARRUSEL INICIO-->
         <section class="carruselCine">
             <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -64,7 +71,7 @@
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="2000">
+                    <div class="carousel-item active" data-bs-interval="10000">
                         <img src="./img/1920x700.jpeg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-table bg-transparent text-dark">
                             <h5 class="bg-light p-3 rounded-pill">HUSTLE</h5>
@@ -74,7 +81,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
+                    <div class="carousel-item" data-bs-interval="10000">
                         <img src="./img/1920x700_2.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block bg-transparent text-dark">
                             <h5>Second slide label</h5>
@@ -84,7 +91,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
+                    <div class="carousel-item" data-bs-interval="10000">
                         <img src="./img/1920x700.jpeg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block bg-transparent text-dark">
                             <h5>Third slide label</h5>
@@ -107,13 +114,167 @@
                 </button>
             </div>
         </section>
+        <!-- CARRUSEL FIN-->
     </header>
-    <main>
-
+    <!-- CABECERA FIN-->
+    <!-- MAIN INICIO-->
+    <main class="row p-1 mt-1">
+        <section class="col-12 col-md-8">
+            <div class="row row-cols-1 row-cols-md-2 g-1">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/1920x700.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pelicula 1</h5>
+                            <p class="card-text d-none d-md-inline-block">This is a longer card with supporting text
+                                below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                            <a href="#" class="btn te btn-outline-danger d-block">ver mas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/1920x700.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pelicula 2</h5>
+                            <p class="card-text d-none d-md-inline-block">This is a short card.</p>
+                            <a href="#" class="btn btn-outline-danger d-block">ver mas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/1920x700.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pelicula 3</h5>
+                            <p class="card-text d-none d-md-inline-block">This is a longer card with supporting text
+                                below as a natural lead-in
+                                to additional content.</p>
+                            <a href="#" class="btn btn-outline-danger d-block">ver mas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/1920x700.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pelicula 4</h5>
+                            <p class="card-text d-none d-md-inline-block">This is a longer card with supporting text
+                                below as a natural lead-in
+                                to additional content.</p>
+                            <a href="#" class="btn btn-outline-danger d-block">ver mas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="col-12 col-md-4">
+            <div class="row">
+                <div class="col">
+                    <p class="col d-block d-md-none">
+                        <a class="btn btn-danger d-block" data-bs-toggle="collapse" href="#multiCollapseExample1"
+                            role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Busqueda y
+                            Categorias</a>
+                    </p>
+                    <div class="collapse multi-collapse d-md-flex" id="multiCollapseExample1">
+                        <div class="card h-100 border-danger bg-danger">
+                            <div class="card-header">
+                                <!-- <h4>Menu</h4> -->
+                                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                            data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                            aria-selected="true">Busqueda</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                            data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                                            aria-selected="false">Categorias</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <img src="./img/logo.png" class="card-img-top img-fluid w-50 m-auto" alt="...">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="card-body tab-pane fade show active" id="home" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <h6 class="card-title mb-3">Buscar entradas del blog</h6>
+                                    <form class="card-text d-flex">
+                                        <input class="form-control me-2" type="search" aria-label="Search">
+                                        <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                                    </form>
+                                </div>
+                                <div class="card-body tab-pane fade" id="profile" role="tabpanel"
+                                    aria-labelledby="profile-tab">
+                                    <h6 class="card-title mb-3">Secciones</h6>
+                                    <ul class="card-text list-group">
+                                        <a href="#"
+                                            class="list-group-item list-group-item-action list-group-item-primary">
+                                            <li class="d-flex justify-content-between align-items-center">
+                                                A list item
+                                                <span class="badge bg-primary rounded-pill">14</span>
+                                            </li>
+                                        </a>
+                                        <a href="#"
+                                            class="list-group-item list-group-item-action list-group-item-primary">
+                                            <li class="d-flex justify-content-between align-items-center">
+                                                A second list item
+                                                <span class="badge bg-primary rounded-pill">2</span>
+                                            </li>
+                                        </a>
+                                        <a href="#"
+                                            class="list-group-item list-group-item-action list-group-item-primary">
+                                            <li class="d-flex justify-content-between align-items-center">
+                                                A third list item
+                                                <span class="badge bg-primary rounded-pill">1</span>
+                                            </li>
+                                        </a>
+                                        <a href="#"
+                                            class="list-group-item list-group-item-action list-group-item-primary">
+                                            <li class="d-flex justify-content-between align-items-center">
+                                                A third list item
+                                                <span class="badge bg-primary rounded-pill">1</span>
+                                            </li>
+                                        </a>
+                                        <a href="#"
+                                            class="list-group-item list-group-item-action list-group-item-primary">
+                                            <li class="d-flex justify-content-between align-items-center">
+                                                A third list item
+                                                <span class="badge bg-primary rounded-pill">1</span>
+                                            </li>
+                                        </a>
+                                        <a href="#"
+                                            class="list-group-item list-group-item-action list-group-item-primary">
+                                            <li class="d-flex justify-content-between align-items-center">
+                                                A third list item
+                                                <span class="badge bg-primary rounded-pill">1</span>
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer d-none d-md-block">
+                                <h6>Patrocinador: <strong>RollingCodeSchool</strong></h6>
+                                <div class="ratio ratio-16x9">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube-nocookie.com/embed/gH8AionIVB0?controls=0&showinfo=0&modestbranding=1&rel=0"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <!-- MAIN FIN-->
+    <!-- PIE INICIO-->
     <footer>
 
     </footer>
+    <!-- PIE FIN-->
 
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
