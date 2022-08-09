@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- Required meta tags -->
@@ -9,11 +9,13 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <title>Proyecto cine</title>
 </head>
 
-<body>
+<body class="p-3 m-auto">
     <!-- CABECERA INICIO-->
     <header>
         <!-- NAVBAR INICIO-->
@@ -118,161 +120,200 @@
     </header>
     <!-- CABECERA FIN-->
     <!-- MAIN INICIO-->
-    <main class="row p-1 mt-1">
-        <section class="col-12 col-md-8">
-            <div class="row row-cols-1 row-cols-md-2 g-1">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="./img/1920x700.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Pelicula 1</h5>
-                            <p class="card-text d-none d-md-inline-block">This is a longer card with supporting text
-                                below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                            <a href="#" class="btn te btn-outline-danger d-block">ver mas</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="./img/1920x700.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Pelicula 2</h5>
-                            <p class="card-text d-none d-md-inline-block">This is a short card.</p>
-                            <a href="#" class="btn btn-outline-danger d-block">ver mas</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="./img/1920x700.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Pelicula 3</h5>
-                            <p class="card-text d-none d-md-inline-block">This is a longer card with supporting text
-                                below as a natural lead-in
-                                to additional content.</p>
-                            <a href="#" class="btn btn-outline-danger d-block">ver mas</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="./img/1920x700.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Pelicula 4</h5>
-                            <p class="card-text d-none d-md-inline-block">This is a longer card with supporting text
-                                below as a natural lead-in
-                                to additional content.</p>
-                            <a href="#" class="btn btn-outline-danger d-block">ver mas</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="col-12 col-md-4">
-            <div class="row">
-                <div class="col">
-                    <p class="col d-block d-md-none">
-                        <a class="btn btn-danger d-block" data-bs-toggle="collapse" href="#multiCollapseExample1"
-                            role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Busqueda y
-                            Categorias</a>
-                    </p>
-                    <div class="collapse multi-collapse d-md-flex" id="multiCollapseExample1">
-                        <div class="card h-100 border-danger bg-danger">
-                            <div class="card-header">
-                                <!-- <h4>Menu</h4> -->
-                                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-                                            data-bs-target="#home" type="button" role="tab" aria-controls="home"
-                                            aria-selected="true">Busqueda</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
-                                            data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
-                                            aria-selected="false">Categorias</button>
-                                    </li>
-                                </ul>
+    <main class="container-fluid">
+        <div class="row p-1 mt-1">
+            <section class="col-12 col-md-8">
+                <div class="row row-cols-1 row-cols-md-2 g-1">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./img/1920x700.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pelicula 1</h5>
+                                <p class="card-text d-none d-md-inline-block">This is a longer card with supporting text
+                                    below as a natural lead-in
+                                    to additional content. This content is a little bit longer.</p>
+                                <a href="#" class="btn te btn-outline-danger d-block">ver mas</a>
                             </div>
-                            <img src="./img/logo.png" class="card-img-top img-fluid w-50 m-auto" alt="...">
-                            <div class="tab-content" id="myTabContent">
-                                <div class="card-body tab-pane fade show active" id="home" role="tabpanel"
-                                    aria-labelledby="home-tab">
-                                    <h6 class="card-title mb-3">Buscar entradas del blog</h6>
-                                    <form class="card-text d-flex">
-                                        <input class="form-control me-2" type="search" aria-label="Search">
-                                        <button class="btn btn-outline-dark" type="submit">Buscar</button>
-                                    </form>
-                                </div>
-                                <div class="card-body tab-pane fade" id="profile" role="tabpanel"
-                                    aria-labelledby="profile-tab">
-                                    <h6 class="card-title mb-3">Secciones</h6>
-                                    <ul class="card-text list-group">
-                                        <a href="#"
-                                            class="list-group-item list-group-item-action list-group-item-primary">
-                                            <li class="d-flex justify-content-between align-items-center">
-                                                A list item
-                                                <span class="badge bg-primary rounded-pill">14</span>
-                                            </li>
-                                        </a>
-                                        <a href="#"
-                                            class="list-group-item list-group-item-action list-group-item-primary">
-                                            <li class="d-flex justify-content-between align-items-center">
-                                                A second list item
-                                                <span class="badge bg-primary rounded-pill">2</span>
-                                            </li>
-                                        </a>
-                                        <a href="#"
-                                            class="list-group-item list-group-item-action list-group-item-primary">
-                                            <li class="d-flex justify-content-between align-items-center">
-                                                A third list item
-                                                <span class="badge bg-primary rounded-pill">1</span>
-                                            </li>
-                                        </a>
-                                        <a href="#"
-                                            class="list-group-item list-group-item-action list-group-item-primary">
-                                            <li class="d-flex justify-content-between align-items-center">
-                                                A third list item
-                                                <span class="badge bg-primary rounded-pill">1</span>
-                                            </li>
-                                        </a>
-                                        <a href="#"
-                                            class="list-group-item list-group-item-action list-group-item-primary">
-                                            <li class="d-flex justify-content-between align-items-center">
-                                                A third list item
-                                                <span class="badge bg-primary rounded-pill">1</span>
-                                            </li>
-                                        </a>
-                                        <a href="#"
-                                            class="list-group-item list-group-item-action list-group-item-primary">
-                                            <li class="d-flex justify-content-between align-items-center">
-                                                A third list item
-                                                <span class="badge bg-primary rounded-pill">1</span>
-                                            </li>
-                                        </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./img/1920x700.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pelicula 2</h5>
+                                <p class="card-text d-none d-md-inline-block">This is a short card.</p>
+                                <a href="#" class="btn btn-outline-danger d-block">ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./img/1920x700.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pelicula 3</h5>
+                                <p class="card-text d-none d-md-inline-block">This is a longer card with supporting text
+                                    below as a natural lead-in
+                                    to additional content.</p>
+                                <a href="#" class="btn btn-outline-danger d-block">ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./img/1920x700.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pelicula 4</h5>
+                                <p class="card-text d-none d-md-inline-block">This is a longer card with supporting text
+                                    below as a natural lead-in
+                                    to additional content.</p>
+                                <a href="#" class="btn btn-outline-danger d-block">ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="col-12 col-md-4">
+                <div class="row">
+                    <div class="col">
+                        <p class="col d-block d-md-none">
+                            <a class="btn btn-danger d-block" data-bs-toggle="collapse" href="#multiCollapseExample1"
+                                role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Busqueda y
+                                Categorias</a>
+                        </p>
+                        <div class="collapse multi-collapse d-md-flex" id="multiCollapseExample1">
+                            <div class="card h-100 border-danger bg-danger w-100">
+                                <div class="card-header m-auto">
+                                    <!-- <h4>Menu</h4> -->
+                                    <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                                data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                                aria-selected="true">Busqueda</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                                data-bs-target="#profile" type="button" role="tab"
+                                                aria-controls="profile" aria-selected="false">Categorias</button>
+                                        </li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="card-footer d-none d-md-block">
-                                <h6>Patrocinador: <strong>RollingCodeSchool</strong></h6>
-                                <div class="ratio ratio-16x9">
-                                    <iframe width="560" height="315"
-                                        src="https://www.youtube-nocookie.com/embed/gH8AionIVB0?controls=0&showinfo=0&modestbranding=1&rel=0"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
+                                <img src="./img/logo.png" class="card-img-top img-fluid w-50 m-auto" alt="...">
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="card-body tab-pane fade show active" id="home" role="tabpanel"
+                                        aria-labelledby="home-tab">
+                                        <h6 class="card-title mb-3">Buscar entradas del blog</h6>
+                                        <form class="card-text d-flex">
+                                            <input class="form-control me-2" type="search" aria-label="Search">
+                                            <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                                        </form>
+                                    </div>
+                                    <div class="card-body tab-pane fade" id="profile" role="tabpanel"
+                                        aria-labelledby="profile-tab">
+                                        <h6 class="card-title mb-3">Generos de Peliculas</h6>
+                                        <ul class="card-text list-group">
+                                            <a href="#"
+                                                class="list-group-item list-group-item-action list-group-item-danger">
+                                                <li class="d-flex justify-content-between align-items-center">
+                                                    <strong>Accion</strong>
+                                                    <span class="badge bg-danger rounded-pill">5</span>
+                                                </li>
+                                            </a>
+                                            <a href="#"
+                                                class="list-group-item list-group-item-action list-group-item-danger">
+                                                <li class="d-flex justify-content-between align-items-center">
+                                                    <strong>Ciencia Ficcion</strong>
+                                                    <span class="badge bg-danger rounded-pill">2</span>
+                                                </li>
+                                            </a>
+                                            <a href="#"
+                                                class="list-group-item list-group-item-action list-group-item-danger">
+                                                <li class="d-flex justify-content-between align-items-center">
+                                                    <strong>Comedia</strong>
+                                                    <span class="badge bg-danger rounded-pill">8</span>
+                                                </li>
+                                            </a>
+                                            <a href="#"
+                                                class="list-group-item list-group-item-action list-group-item-danger">
+                                                <li class="d-flex justify-content-between align-items-center">
+                                                    <strong>Drama</strong>
+                                                    <span class="badge bg-danger rounded-pill">2</span>
+                                                </li>
+                                            </a>
+                                            <a href="#"
+                                                class="list-group-item list-group-item-action list-group-item-danger">
+                                                <li class="d-flex justify-content-between align-items-center">
+                                                    <strong>Suspenso</strong>
+                                                    <span class="badge bg-danger rounded-pill">1</span>
+                                                </li>
+                                            </a>
+                                            <a href="#"
+                                                class="list-group-item list-group-item-action list-group-item-danger">
+                                                <li class="d-flex justify-content-between align-items-center">
+                                                    <strong>Terror</strong>
+                                                    <span class="badge bg-danger rounded-pill">1</span>
+                                                </li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-footer d-none d-md-block">
+                                    <h6>Patrocinador: <strong>RollingCodeSchool</strong></h6>
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="560" height="315"
+                                            src="https://www.youtube-nocookie.com/embed/gH8AionIVB0?controls=0&showinfo=0&modestbranding=1&rel=0"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <!-- MAIN FIN-->
     <!-- PIE INICIO-->
-    <footer>
-
+    <footer class="container-fluid">
+        <div class="row bg-danger">
+        <section class="col-12 col-md-4">
+            <img src="./img/logo.png" alt="" class="img-fluid d-block w-75 m-auto">
+        </section>
+        <section class="col-12 col-md-4 text-center m-auto">
+            <div class="row">
+                <h4>Social</h4>
+            </div>
+            <div class="row d-block">
+                <a href="https://wa.me/5493816423430" class="text-decoration-none" target="_blank">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="https://www.facebook.com/orregoe/" class="text-decoration-none" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/orregoe/" class="text-decoration-none" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/orregoe/" class="text-decoration-none" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://github.com/eOrrego" class="text-decoration-none" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+        </section>
+        <section class="col-12 col-md-4 m-auto d-none d-md-block">
+            <div>
+                <h5>Informacion</h5>
+            </div>
+            <div>
+                <ul>
+                    <li>Nota legal</li>
+                    <li>Politicas de privacidad</li>
+                </ul>
+            </div>
+        </section>
+    </div>
     </footer>
     <!-- PIE FIN-->
 
