@@ -20,7 +20,7 @@
     <header>
         <!-- NAVBAR INICIO-->
         <section class="navbarCine">
-            <nav class="navbar fixed-top navbar-expand-xl navbar-light bg-transparent">
+            <nav class="navbar fixed-top navbar-expand-md navbar-light bg-transparent">
                 <a class="navbar-brand text-light fw-bolder" href="#">
                     <img class="img-fluid mx-5" src="./img/logo.png" alt="Logo Adam Sandler" width="130">
                 </a>
@@ -61,113 +61,136 @@
             </nav>
         </section>
         <!-- NAVBAR FIN-->
-        <!-- CARRUSEL INICIO-->
+        <!-- BANER INICIO-->
         <section class="carruselCine">
-            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="./img/1920x700.jpeg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-table bg-transparent text-dark">
-                            <h5 class="bg-light p-3 rounded-pill">HUSTLE</h5>
-                            <p class="bg-light p-3 rounded-pill">El nuevo drama deportivo de Adam Sandler</p>
-                            <a href="./page404.html">
-                                <button type="button" class="btn btn-outline-danger">Ver mas</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="10000">
-                        <img src="./img/1920x700_2.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block bg-transparent text-dark">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                            <a href="">
-                                <button type="button" class="btn btn-primary">Primary</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="10000">
-                        <img src="./img/1920x700.jpeg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block bg-transparent text-dark">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                            <a href="">
-                                <button type="button" class="btn btn-primary">Primary</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+            <img src="./img/1920x700.jpeg" class="d-block w-100" alt="...">
         </section>
-        <!-- CARRUSEL FIN-->
+        <!-- BANER FIN-->
     </header>
     <!-- CABECERA FIN-->
     <!-- MAIN INICIO-->
     <main class="container-fluid">
         <div class="row p-1 mt-1">
             <section class="col-12 col-md-8">
-                <div class="row row-cols-1 row-cols-md-2 g-1">
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="./img/1920x700.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Pelicula 1</h5>
-                                <p class="card-text d-none d-md-inline-block">This is a longer card with supporting text
-                                    below as a natural lead-in
-                                    to additional content. This content is a little bit longer.</p>
-                                <a href="./pageone.html" class="btn te btn-outline-danger d-block">ver mas</a>
-                            </div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Pelicula 1</li>
+                    </ol>
+                </nav>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active bg-danger" id="list-home-list"
+                                data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Sobre el
+                                actor</a>
+                            <a class="list-group-item list-group-item-action bg-danger" id="list-profile-list"
+                                data-bs-toggle="list" href="#list-profile" role="tab"
+                                aria-controls="list-profile">Pelicula</a>
+                            <a class="list-group-item list-group-item-action bg-danger" id="list-messages-list"
+                                data-bs-toggle="list" href="#list-messages" role="tab"
+                                aria-controls="list-messages">Criticas</a>
+                            <a class="list-group-item list-group-item-action bg-danger" id="list-settings-list"
+                                data-bs-toggle="list" href="#list-settings" role="tab"
+                                aria-controls="list-settings">trailer</a>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="./img/1920x700.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Pelicula 2</h5>
-                                <p class="card-text d-none d-md-inline-block">This is a short card.</p>
-                                <a href="./pageone.html" class="btn btn-outline-danger d-block">ver mas</a>
+                    <div class="col-12 col-md-8">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active text-center" id="list-home" role="tabpanel"
+                                aria-labelledby="list-home-list">
+                                <img class="img-fluid img-thumbnail"
+                                    src="https://m.media-amazon.com/images/M/MV5BMjQyNzM2MjM1Ml5BMl5BanBnXkFtZTcwMDE5NjI3Mg@@._V1_UY317_CR7,0,214,317_AL_.jpg"
+                                    alt="">
+                                <p class="text-start"><strong>Adam Richard Sandler</strong> nació el 9 de septiembre de 1966 en Brooklyn, Nueva York, hijo
+                                    de Judith (Levine), maestra de una guardería, y Stanley Alan Sandler, ingeniero
+                                    eléctrico. Él es de ascendencia judía rusa. A los 17, dio su primer paso para
+                                    convertirse en un comediante cuando subió espontáneamente al escenario en un club de
+                                    comedia de Boston. Descubrió que era un cómico natural. Cultivó su talento mientras
+                                    estaba en la Universidad de Nueva York (se graduó con una licenciatura en Bellas
+                                    Artes en 1991) actuando regularmente en clubes y universidades.</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="./img/1920x700.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Pelicula 3</h5>
-                                <p class="card-text d-none d-md-inline-block">This is a longer card with supporting text
-                                    below as a natural lead-in
-                                    to additional content.</p>
-                                <a href="./pageone.html" class="btn btn-outline-danger d-block">ver mas</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="./img/1920x700.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Pelicula 4</h5>
-                                <p class="card-text d-none d-md-inline-block">This is a longer card with supporting text
-                                    below as a natural lead-in
-                                    to additional content.</p>
-                                <a href="./pageone.html" class="btn btn-outline-danger d-block">ver mas</a>
-                            </div>
+                            <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                                aria-labelledby="list-profile-list">Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Tempora, nemo sint minima consequuntur, aspernatur aut laboriosam pariatur, ad
+                                iusto animi quas laudantium voluptates beatae. Doloribus consectetur asperiores
+                                aspernatur provident molestias.
+                                Nostrum cumque illum, pariatur accusamus, tempore sunt quaerat qui ipsam quae optio,
+                                sapiente quis non quo aspernatur minima incidunt in consectetur impedit. Praesentium
+                                soluta dolor eaque facere aliquid odio architecto!
+                                Corrupti ipsam, repellendus officiis harum cumque quaerat quo cum. Ipsam eum
+                                molestias
+                                illo deserunt distinctio perferendis labore inventore similique, natus dolorum
+                                veniam,
+                                fugiat eveniet repellendus expedita impedit unde, ducimus et!
+                                Ipsum fugiat, voluptas illo eum ut, dolor, exercitationem nostrum possimus hic
+                                reprehenderit quas unde at! Sit, repellendus. Voluptate dolores saepe, animi, quas
+                                ducimus modi incidunt reprehenderit adipisci tempora at magni?
+                                Quibusdam, animi possimus nobis voluptates hic repellendus? Maiores, unde quas eius,
+                                corporis sint rerum laudantium corrupti molestiae omnis cumque voluptas, natus
+                                deleniti
+                                voluptates. Nihil quaerat ullam, magni ducimus illo esse.</div>
+                            <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                                aria-labelledby="list-messages-list">Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Amet autem nobis est porro numquam necessitatibus atque consequatur repellat,
+                                error nemo perspiciatis deserunt dicta nam, doloribus at, eum in distinctio tenetur.
+                                Nostrum molestiae placeat, animi at neque sequi quaerat amet ea nisi in
+                                exercitationem
+                                repellat tempora modi ab error dignissimos blanditiis, fugiat esse obcaecati
+                                quisquam
+                                numquam? Similique impedit quibusdam recusandae minima.
+                                Beatae accusantium sit, perferendis repudiandae eaque porro sequi doloribus debitis
+                                aspernatur autem eligendi ipsum expedita fuga ipsa, accusamus, sunt optio quisquam.
+                                Architecto ad, mollitia tempore placeat fugit vitae. Ab, ipsam.</div>
+                            <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                                aria-labelledby="list-settings-list">Lorem ipsum dolor sit, amet consectetur
+                                adipisicing
+                                elit. Est, consequuntur reiciendis itaque totam et quae magni nostrum alias,
+                                assumenda
+                                optio neque modi doloribus accusantium fuga obcaecati veritatis repudiandae dolores
+                                id.
+                                Dolor, pariatur officiis placeat in soluta aspernatur laudantium similique dicta
+                                minima?
+                                Tempora aliquid, maiores libero voluptas dolor recusandae minus error suscipit
+                                voluptatem eum nisi laudantium blanditiis veniam quae ex hic.
+                                Sed rem dolore, blanditiis tempore illo ea ab modi accusamus, asperiores, corrupti
+                                nihil
+                                labore! Distinctio numquam nisi laborum ut esse a aperiam nihil tempora, atque,
+                                velit
+                                eos architecto. Inventore, alias.
+                                Officia reprehenderit nobis iusto, doloremque quaerat corporis voluptatibus
+                                quibusdam
+                                expedita animi? Rem incidunt quis laudantium omnis cumque, dolorem, nesciunt
+                                assumenda
+                                dignissimos maxime accusantium, recusandae minus facilis qui nulla laboriosam
+                                aperiam?
+                                Nobis temporibus esse fugit iste, corporis itaque, alias, praesentium hic et
+                                similique
+                                iure saepe at quod. Reiciendis corporis aut sunt minima eligendi, cumque impedit
+                                repellendus doloremque, consequuntur recusandae ipsa. Quis?
+                                Esse aperiam iure excepturi? Sunt optio ea quod distinctio quam consectetur totam
+                                earum,
+                                consequuntur fugiat magni fuga a, ipsam porro aspernatur quisquam non culpa. A
+                                ducimus
+                                accusantium facilis assumenda fuga.
+                                Debitis explicabo corrupti dolores totam repellendus adipisci quos quae delectus
+                                alias
+                                iste? Saepe voluptate eos ullam beatae, cupiditate veritatis totam fugit distinctio
+                                aliquid exercitationem earum odio molestias, veniam aliquam laboriosam.
+                                In, corporis? Nesciunt officiis fugiat cupiditate modi. Accusantium ipsum incidunt
+                                assumenda dolor laboriosam quo sed quia et? Perspiciatis ad labore iure ipsam
+                                aliquid
+                                commodi quas animi consectetur quasi, nemo inventore?
+                                Sint, iure impedit. Ipsam voluptatum explicabo in corporis asperiores, deserunt
+                                temporibus totam. Adipisci dolor, totam suscipit tenetur, vero veritatis, quaerat
+                                perspiciatis iure soluta quam illum! Mollitia totam dicta enim quibusdam!
+                                Quisquam facere laborum vero, repudiandae quidem vel, dignissimos et earum maxime
+                                rem
+                                unde. Corrupti, reprehenderit dolores animi dolor deserunt reiciendis accusamus
+                                atque
+                                maiores repellat ea quae modi autem itaque eius.</div>
                         </div>
                     </div>
                 </div>
