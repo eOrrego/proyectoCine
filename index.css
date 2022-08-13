@@ -1,0 +1,58 @@
+body {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    body {
+        /* background-color: red; */
+        width: 90% !important;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body {
+        /* background-color: blue; */
+        width: 90% !important;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        /* background-color: green; */
+        width: 95% !important;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        /* background-color: yellow; */
+        width: 90% !important;
+    }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    body {
+        /* background-color: cornflowerblue; */
+        width: 60% !important;
+    }
+}
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    body {
+        background-color: rebeccapurple;
+    }
+}

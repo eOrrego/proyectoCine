@@ -12,50 +12,54 @@
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
+    <!-- ANIMATECSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="index.css">
+
     <title>Proyecto cine</title>
 </head>
 
-<body class="container-fluid p-3 m-auto">
+<body class="container-fluid">
     <!-- CABECERA INICIO-->
     <header>
         <!-- NAVBAR INICIO-->
         <section class="navbarCine">
-            <nav class="navbar fixed-top navbar-expand-xl navbar-light bg-transparent">
-                <a class="navbar-brand text-light fw-bolder" href="#">
-                    <img class="img-fluid mx-5" src="./img/logo.png" alt="Logo Adam Sandler" width="130">
-                </a>
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
                 <div class="container">
+                    <a class="navbar-brand text-light fw-bolder" href="#">
+                        <img class="img-fluid" src="./img/logo.png" alt="Logo Adam Sandler" width="130">
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item dropdown mx-5">
-                                <a class="nav-link dropdown-toggle text-light fw-bolder bg-danger rounded-pill p-3"
-                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Peliculas
+                        <ul class="navbar-nav ms-auto animate__animated animate__backInLeft">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <strong>Peliculas</strong>
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Billy Madiso</a></li>
                                     <li><a class="dropdown-item" href="#">Un Papá Genial</a></li>
                                     <li><a class="dropdown-item" href="#">Little Nicky</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item mx-5">
-                                <a class="nav-link active text-light fw-bolder bg-danger rounded-pill p-3"
-                                    aria-current="page" href="#">Acerca de
-                                    Nosotros</a>
+                            <li class="nav-item">
+                                <a class="nav-link text-light active" aria-current="page" href="#"><strong>Acerca de
+                                        Nosotros</strong></a>
                             </li>
-                            <li class="nav-item mx-5">
-                                <a class="nav-link text-light fw-bolder bg-danger rounded-pill p-3" aria-current="page"
-                                    href="#">Contacto</a>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" aria-current="page"
+                                    href="#"><strong>Contacto</strong></a>
                             </li>
                         </ul>
-                        <button class="btn btn-danger mx-2" type="button">Suscripcion</button>
-                        <button class="btn btn-danger mx-2" type="button">Login</button>
+                        <button class="btn btn-outline-danger bg-transparent" type="button">Suscripcion</button>
+                        <button class="btn btn-outline-danger" type="button">Login</button>
                     </div>
                 </div>
             </nav>
@@ -63,7 +67,9 @@
         <!-- NAVBAR FIN-->
         <!-- CARRUSEL INICIO-->
         <section class="carruselCine">
-            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <img src="./img/1920x700_03.png" class="img-fluid d-block d-md-none w-100" alt="...">
+            <div id="carouselExampleCaptions" class="carousel carousel-dark slide carousel-fade d-none d-md-block"
+                data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -74,32 +80,32 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="./img/1920x700.jpeg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-table bg-transparent text-dark">
-                            <h5 class="bg-light p-3 rounded-pill">HUSTLE</h5>
-                            <p class="bg-light p-3 rounded-pill">El nuevo drama deportivo de Adam Sandler</p>
+                        <img src="./img/1920x700_03.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block bg-transparent text-dark">
+                            <h5 class="bg-transparent text-light fs-1 fw-bold animate__animated animate__rubberBand">HUSTLE</h5>
+                            <p class="bg-transparent text-light fs-5 animate__animated animate__tada">El nuevo drama deportivo de Adam Sandler</p>
                             <a href="./page404.html">
-                                <button type="button" class="btn btn-outline-danger">Ver mas</button>
+                                <button type="button" class="btn btn-outline-danger animate__animated animate__heartBeat">Ver mas</button>
                             </a>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="10000">
-                        <img src="./img/1920x700_2.jpg" class="d-block w-100" alt="...">
+                        <img src="./img/1920x700_02.png" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block bg-transparent text-dark">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                            <a href="">
-                                <button type="button" class="btn btn-primary">Primary</button>
+                            <h5 class="bg-transparent text-light fs-1 fw-bold animate__animated animate__rubberBand">PELICULA</h5>
+                            <p class="bg-transparent text-light fs-5 animate__animated animate__tada">El nuevo drama deportivo de Adam Sandler</p>
+                            <a href="./page404.html">
+                                <button type="button" class="btn btn-outline-danger animate__animated animate__heartBeat">Ver mas</button>
                             </a>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="10000">
                         <img src="./img/1920x700.jpeg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block bg-transparent text-dark">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                            <a href="">
-                                <button type="button" class="btn btn-primary">Primary</button>
+                            <h5 class="bg-transparent text-light fs-1 fw-bold animate__animated animate__rubberBand">MOVIE</h5>
+                            <p class="bg-transparent text-light fs-5 animate__animated animate__tada">El nuevo drama deportivo de Adam Sandler</p>
+                            <a href="./page404.html">
+                                <button type="button" class="btn btn-outline-danger animate__animated animate__heartBeat">Ver mas</button>
                             </a>
                         </div>
                     </div>
