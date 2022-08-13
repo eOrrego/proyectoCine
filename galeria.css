@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.galeria {
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galeria li {
+    margin: 15px;
+    box-shadow: 5px 5px 10px rgb(71, 70, 70);
+    height: 280px;
+}
+
+.galeria li:hover {
+    box-shadow: 5px 5px 10px rgb(34, 34, 34);
+    transform: translateY(-3%);
+}
+
+.galeria img {
+    width: 180px;
+    height: 280px;
+
+}
+
+.modal {
+    display: none;
+}
+
+.modal:target {
+    display: block;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal h3 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.imagen {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+
+.imagen a {
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 0 10px
+}
+
+.imagen a:nth-child(2) {
+    margin: 0;
+    height: 100%;
+
+}
+
+.imagen img {
+    width: 400px;
+    height: 500px;
+    max-width: 100%;
+    border: 7px solid #fff;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+}
+
+img {
+    border: 2px solid #fff;
+}
+
+.bg-p-imgMo {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.466);
+    color: #fff;
+    width: 360px;
+    height: 100px;
+    max-width: 100%;
+    position: absolute;
+}
+
+.cerrar {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    background: #fff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: rgba(179, 164, 164, 0.486);
+    margin-left: 50%;
+    margin-top: 15%;
+}
+
+.cerrar:hover {
+    box-shadow: 5px 5px 10px rgb(34, 34, 34);
+    transform: translateY(-5%);
+}
