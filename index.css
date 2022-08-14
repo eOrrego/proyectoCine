@@ -85,6 +85,39 @@ body {
     height: 100%;
 }
 
+.modal-content{
+    background-color: #000000af;
+    color: #ffffff;
+}
+
+.modal-header, .modal-footer{
+    background-color: #db0000af;
+}
+
+.modal-body button{
+    background-color: #db0000;
+    color: #ffffff;
+}
+
+.modal-body button:hover{
+    background-color: #ffffff;
+    color: #db0000;
+}
+
+.modal-footer button{
+    background-color: #db0000;
+    color: #ffffff;
+}
+
+.modal-footer button:hover{
+    background-color: #ffffff;
+    color: #db0000;
+}
+
+.modal-body .form-check .form-check-input{
+    background-color: #db0000;
+}
+
 .aside .card{
     background-color: #000000;
     color: #ffffff;

@@ -57,7 +57,7 @@
                             </li>
                             <li class="nav-item mx-2">
                                 <a class="nav-link text-light fs-5" aria-current="page"
-                                    href="./page404.html"><strong>BIOGRAFIA</strong></a>
+                                    href="./pageone.html"><strong>BIOGRAFIA</strong></a>
                             </li>
                             <li class="nav-item mx-2">
                                 <a class="nav-link text-light fs-5" aria-current="page"
@@ -65,7 +65,8 @@
                             </li>
                         </ul>
                         <div id="buttonNav" class="d-grid gap-2 d-lg-block animate__animated animate__heartBeat">
-                            <a href="#link" class="btn fw-bolder mx-lg-1 rounded-0" role="button">SUSCRIBIRME</a>
+                            <a href="#link" class="btn fw-bolder mx-lg-1 rounded-0" role="button" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">SUSCRIBIRSE</a>
                             <a href="./login.html" class="btn fw-bolder mx-lg-1 rounded-0" role="button">LOGIN</a>
                         </div>
                     </div>
@@ -343,6 +344,85 @@
         </div>
     </footer>
     <!-- PIE FIN-->
+
+    <!-- Modal SUSCRIBIRME-->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header rounded-0">
+                    <h5 class="modal-title" id="staticBackdropLabel">Formulario de suscripción</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-md-4">
+                            <label for="validationDefault01" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="validationDefault01" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationDefault02" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="validationDefault02" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationDefaultUsername" class="form-label">Username</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                                <input type="text" class="form-control" id="validationDefaultUsername"
+                                    aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationDefault04" class="form-label">País</label>
+                            <select class="form-select" id="validationDefault04" required>
+                                <option selected disabled value="">Elegir país</option>
+                                <option value="1">Argentina</option>
+                                <option value="2">Bolivia</option>
+                                <option value="3">Brasil</option>
+                                <option value="4">Chile</option>
+                                <option value="5">Colombia</option>
+                                <option value="6">Ecuador</option>
+                                <option value="7">Paraguay</option>
+                                <option value="8">Perú</option>
+                                <option value="9">Uruguay</option>
+                                <option value="10">Venezuela</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                    Desea recibir notificaciones por E-mail.
+                                </label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked1">
+                                <label class="form-check-label" for="flexSwitchCheckChecked1">Novedades.</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked2">
+                                <label class="form-check-label" for="flexSwitchCheckChecked2">Concursos.</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
+                                <label class="form-check-label" for="invalidCheck3">
+                                    Acepta terminos y condiciones.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn rounded-0 fw-bolder" type="submit">ENVIAR</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer rounded-0">
+                    <button type="button" class="btn rounded-0 fw-bolder" data-bs-dismiss="modal">CERRAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery -->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.min.js">
