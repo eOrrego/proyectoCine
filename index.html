@@ -26,40 +26,48 @@
     <header>
         <!-- NAVBAR INICIO-->
         <section class="navbarCine">
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <nav id="menu" class="navbar navbar-expand-lg navbar-dark">
                 <div class="container">
-                    <a class="navbar-brand text-light fw-bolder" href="#">
-                        <img class="img-fluid" src="./img/logo.png" alt="Logo Adam Sandler" width="130">
+                    <a class="navbar-brand animate__animated animate__heartBeat" href="./index.html">
+                        <img class="img-fluid" src="./img/logo.png" alt="Logo Adam Sandler" width="150">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto animate__animated animate__backInLeft">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown"
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="user-select-none navbar-nav m-auto animate__animated animate__backInDown">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-light active fs-5" aria-current="page"
+                                    href="./index.html"><strong>HOME</strong></a>
+                            </li>
+                            <li class="nav-item dropdown mx-2">
+                                <a class="nav-link dropdown-toggle text-light fs-5" href="#" id="navbarDropdown"
                                     role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <strong>Peliculas</strong>
+                                    <strong>SECCIONES</strong>
                                 </a>
-                                <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Billy Madiso</a></li>
-                                    <li><a class="dropdown-item" href="#">Un Papá Genial</a></li>
-                                    <li><a class="dropdown-item" href="#">Little Nicky</a></li>
+                                <ul class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item fs-5 fw-bolder" href="./pagegallery.html">Peliculas</a>
+                                    </li>
+                                    <li><a class="dropdown-item fs-5 fw-bolder" href="./page404.html">Fan Club</a>
+                                    </li>
+                                    <li><a class="dropdown-item fs-5 fw-bolder" href="#">Acerca de Nosotros</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light active" aria-current="page" href="#"><strong>Acerca de
-                                        Nosotros</strong></a>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-light fs-5" aria-current="page"
+                                    href="./page404.html"><strong>BIOGRAFIA</strong></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" aria-current="page"
-                                    href="#"><strong>Contacto</strong></a>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-light fs-5" aria-current="page"
+                                    href="#"><strong>CONTACTO</strong></a>
                             </li>
                         </ul>
-                        <button class="btn btn-outline-danger bg-transparent" type="button">Suscripcion</button>
-                        <button class="btn btn-outline-danger" type="button">Login</button>
+                        <div id="buttonNav" class="d-grid gap-2 d-lg-block animate__animated animate__heartBeat">
+                            <a href="#link" class="btn fw-bolder mx-lg-1 rounded-0" role="button">SUSCRIBIRME</a>
+                            <a href="./login.html" class="btn fw-bolder mx-lg-1 rounded-0" role="button">LOGIN</a>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -67,8 +75,8 @@
         <!-- NAVBAR FIN-->
         <!-- CARRUSEL INICIO-->
         <section class="carruselCine">
-            <img src="./img/1920x700_03.png" class="img-fluid d-block d-md-none w-100" alt="...">
-            <div id="carouselExampleCaptions" class="carousel carousel-dark slide carousel-fade d-none d-md-block"
+            <img src="./img/1920x700_03.png" class="img-fluid d-block d-lg-none" alt="...">
+            <div id="carouselExampleCaptions" class="carousel carousel-dark slide carousel-fade d-none d-lg-block"
                 data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -78,34 +86,46 @@
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
+                <div class="carousel-inner user-select-none">
+                    <div class="carousel-item active">
                         <img src="./img/1920x700_03.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block bg-transparent text-dark">
-                            <h5 class="bg-transparent text-light fs-1 fw-bold animate__animated animate__rubberBand">HUSTLE</h5>
-                            <p class="bg-transparent text-light fs-5 animate__animated animate__tada">El nuevo drama deportivo de Adam Sandler</p>
+                        <div class="carousel-caption bg-transparent">
+                            <h5 class="bg-transparent text-light fs-2 fw-bold animate__animated animate__rubberBand">
+                                HUSTLE</h5>
+                            <p class="bg-transparent text-light fs-5 animate__animated animate__tada">El nuevo drama
+                                deportivo de Adam Sandler</p>
                             <a href="./page404.html">
-                                <button type="button" class="btn btn-outline-danger animate__animated animate__heartBeat">Ver mas</button>
+                                <button type="button"
+                                    class="btn btn-lg fw-bolder rounded-0 animate__animated animate__heartBeat">VER
+                                    MAS</button>
                             </a>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="10000">
+                    <div class="carousel-item">
                         <img src="./img/1920x700_02.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block bg-transparent text-dark">
-                            <h5 class="bg-transparent text-light fs-1 fw-bold animate__animated animate__rubberBand">PELICULA</h5>
-                            <p class="bg-transparent text-light fs-5 animate__animated animate__tada">El nuevo drama deportivo de Adam Sandler</p>
+                        <div class="carousel-caption bg-transparent">
+                            <h5 class="bg-transparent text-light fs-2 fw-bold animate__animated animate__rubberBand">
+                                PELICULA</h5>
+                            <p class="bg-transparent text-light fs-5 animate__animated animate__tada">El nuevo drama
+                                deportivo de Adam Sandler</p>
                             <a href="./page404.html">
-                                <button type="button" class="btn btn-outline-danger animate__animated animate__heartBeat">Ver mas</button>
+                                <button type="button"
+                                    class="btn btn-lg fw-bolder rounded-0 animate__animated animate__heartBeat">VER
+                                    MAS</button>
                             </a>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="10000">
+                    <div class="carousel-item">
                         <img src="./img/1920x700.jpeg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block bg-transparent text-dark">
-                            <h5 class="bg-transparent text-light fs-1 fw-bold animate__animated animate__rubberBand">MOVIE</h5>
-                            <p class="bg-transparent text-light fs-5 animate__animated animate__tada">El nuevo drama deportivo de Adam Sandler</p>
+                        <div class="carousel-caption bg-transparent">
+                            <h5 class="bg-transparent text-light fs-2 fw-bold animate__animated animate__rubberBand">
+                                MOVIE</h5>
+                            <p class="bg-transparent text-light fs-5 animate__animated animate__tada">El nuevo drama
+                                deportivo de Adam Sandler</p>
                             <a href="./page404.html">
-                                <button type="button" class="btn btn-outline-danger animate__animated animate__heartBeat">Ver mas</button>
+                                <button type="button"
+                                    class="btn btn-lg fw-bolder rounded-0 animate__animated animate__heartBeat">VER
+                                    MAS</button>
                             </a>
                         </div>
                     </div>
@@ -126,144 +146,143 @@
     </header>
     <!-- CABECERA FIN-->
     <!-- MAIN INICIO-->
-    <main class="container-fluid">
-        <div class="row p-1 mt-1">
-            <section class="col-12 col-md-8">
-                <div class="row row-cols-1 row-cols-md-2 g-1">
+    <main class="container my-3">
+        <div class="row">
+            <section class="col-12 col-lg-8">
+                <div class="row row-cols-1 row-cols-lg-2 g-1 g-lg-4">
                     <div class="col">
-                        <div class="card h-100">
-                            <img src="./img/1920x700.jpeg" class="card-img-top" alt="...">
+                        <div class="card h-100 rounded-0">
+                            <img src="./img/1920x700.jpeg" class="card-img-top rounded-0" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Pelicula 1</h5>
+                                <p class="card-text">This is a longer card with supporting text
+                                    below as a natural lead-in
+                                    to additional content. This content is a little bit longer.</p>
+                                <a href="./pageone.html" class="btn fw-bolder d-block rounded-0">VER MAS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 rounded-0">
+                            <img src="./img/1920x700_01.png" class="card-img-top rounded-0" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pelicula 2</h5>
                                 <p class="card-text d-none d-md-inline-block">This is a longer card with supporting text
                                     below as a natural lead-in
                                     to additional content. This content is a little bit longer.</p>
-                                <a href="./pageone.html" class="btn te btn-outline-danger d-block">ver mas</a>
+                                <a href="./pageone.html" class="btn fw-bolder d-block rounded-0">VER MAS</a>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100">
-                            <img src="./img/1920x700.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Pelicula 2</h5>
-                                <p class="card-text d-none d-md-inline-block">This is a short card.</p>
-                                <a href="./pageone.html" class="btn btn-outline-danger d-block">ver mas</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="./img/1920x700.jpeg" class="card-img-top" alt="...">
+                        <div class="card h-100 rounded-0">
+                            <img src="./img/1920x700_02.png" class="card-img-top rounded-0" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Pelicula 3</h5>
                                 <p class="card-text d-none d-md-inline-block">This is a longer card with supporting text
                                     below as a natural lead-in
                                     to additional content.</p>
-                                <a href="./pageone.html" class="btn btn-outline-danger d-block">ver mas</a>
+                                <a href="./pageone.html" class="btn fw-bolder d-block rounded-0">VER MAS</a>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100">
-                            <img src="./img/1920x700.jpeg" class="card-img-top" alt="...">
+                        <div class="card h-100 rounded-0">
+                            <img src="./img/1920x700_03.png" class="card-img-top rounded-0" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Pelicula 4</h5>
                                 <p class="card-text d-none d-md-inline-block">This is a longer card with supporting text
                                     below as a natural lead-in
                                     to additional content.</p>
-                                <a href="./pageone.html" class="btn btn-outline-danger d-block">ver mas</a>
+                                <a href="./pageone.html" class="btn fw-bolder d-block rounded-0">VER MAS</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="col-12 col-md-4">
-                <div class="row">
+            <section class="col-12 col-lg-4">
+                <div class="row aside">
                     <div class="col">
-                        <p class="col d-block d-md-none">
-                            <a class="btn btn-danger d-block" data-bs-toggle="collapse" href="#multiCollapseExample1"
-                                role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Busqueda y
-                                Categorias</a>
+                        <p class="col d-block d-lg-none btnMenu">
+                            <a class="btn d-block mt-3 rounded-0 fw-bolder" data-bs-toggle="collapse"
+                                href="#multiCollapseExample1" role="button" aria-expanded="false"
+                                aria-controls="multiCollapseExample1">MENU</a>
                         </p>
-                        <div class="collapse multi-collapse d-md-flex" id="multiCollapseExample1">
-                            <div class="card h-100 border-danger bg-danger w-100">
-                                <div class="card-header m-auto">
-                                    <!-- <h4>Menu</h4> -->
+                        <div class="collapse multi-collapse d-lg-flex" id="multiCollapseExample1">
+                            <div class="card h-100 rounded-0">
+                                <div class="card-header border-light border-3 m-auto">
                                     <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-                                                data-bs-target="#home" type="button" role="tab" aria-controls="home"
-                                                aria-selected="true">Busqueda</button>
+                                            <button class="nav-link active fw-bolder rounded-top" id="home-tab"
+                                                data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab"
+                                                aria-controls="home" aria-selected="true">Busqueda</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
-                                                data-bs-target="#profile" type="button" role="tab"
+                                            <button class="nav-link fw-bolder rounded-top" id="profile-tab"
+                                                data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab"
                                                 aria-controls="profile" aria-selected="false">Categorias</button>
                                         </li>
                                     </ul>
                                 </div>
-                                <img src="./img/logo.png" class="card-img-top img-fluid w-50 m-auto" alt="...">
+                                <img src="./img/HM_logo.png"
+                                    class="card-img-top img-fluid m-auto p-3" alt="...">
                                 <div class="tab-content" id="myTabContent">
                                     <div class="card-body tab-pane fade show active" id="home" role="tabpanel"
                                         aria-labelledby="home-tab">
-                                        <h6 class="card-title mb-3">Buscar entradas del blog</h6>
+                                        <h5 class="card-title fw-bolder">Buscar en blog</h5>
                                         <form class="card-text d-flex">
-                                            <input class="form-control me-2" type="search" aria-label="Search">
-                                            <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                                            <input class="form-control me-2 rounded-0" type="search"
+                                                aria-label="Search">
+                                            <button class="btn rounded-0 fw-bolder" type="submit">BUSCAR</button>
                                         </form>
                                     </div>
                                     <div class="card-body tab-pane fade" id="profile" role="tabpanel"
                                         aria-labelledby="profile-tab">
-                                        <h6 class="card-title mb-3">Generos de Peliculas</h6>
-                                        <ul class="card-text list-group">
-                                            <a href="#"
-                                                class="list-group-item list-group-item-action list-group-item-danger">
-                                                <li class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title">Generos de Peliculas</h5>
+                                        <ul class="card-text list-group rounded-0">
+                                            <a href="#" class="list-group-item border-1 border-dark">
+                                                <li class="d-flex justify-content-between">
                                                     <strong>Accion</strong>
-                                                    <span class="badge bg-danger rounded-pill">5</span>
+                                                    <span class="badge bg-dark rounded-circle">5</span>
                                                 </li>
                                             </a>
-                                            <a href="#"
-                                                class="list-group-item list-group-item-action list-group-item-danger">
-                                                <li class="d-flex justify-content-between align-items-center">
+                                            <a href="#" class="list-group-item border-1 border-dark">
+                                                <li class="d-flex justify-content-between">
                                                     <strong>Ciencia Ficcion</strong>
-                                                    <span class="badge bg-danger rounded-pill">2</span>
+                                                    <span class="badge bg-dark rounded-circle">2</span>
                                                 </li>
                                             </a>
-                                            <a href="#"
-                                                class="list-group-item list-group-item-action list-group-item-danger">
-                                                <li class="d-flex justify-content-between align-items-center">
+                                            <a href="#" class="list-group-item border-1 border-dark">
+                                                <li class="d-flex justify-content-between">
                                                     <strong>Comedia</strong>
-                                                    <span class="badge bg-danger rounded-pill">8</span>
+                                                    <span class="badge bg-dark rounded-circle">8</span>
                                                 </li>
                                             </a>
-                                            <a href="#"
-                                                class="list-group-item list-group-item-action list-group-item-danger">
-                                                <li class="d-flex justify-content-between align-items-center">
+                                            <a href="#" class="list-group-item border-1 border-dark">
+                                                <li class="d-flex justify-content-between">
                                                     <strong>Drama</strong>
-                                                    <span class="badge bg-danger rounded-pill">2</span>
+                                                    <span class="badge bg-dark rounded-circle">2</span>
                                                 </li>
                                             </a>
-                                            <a href="#"
-                                                class="list-group-item list-group-item-action list-group-item-danger">
-                                                <li class="d-flex justify-content-between align-items-center">
+                                            <a href="#" class="list-group-item border-1 border-dark">
+                                                <li class="d-flex justify-content-between">
                                                     <strong>Suspenso</strong>
-                                                    <span class="badge bg-danger rounded-pill">1</span>
+                                                    <span class="badge bg-dark rounded-circle">1</span>
                                                 </li>
                                             </a>
-                                            <a href="#"
-                                                class="list-group-item list-group-item-action list-group-item-danger">
-                                                <li class="d-flex justify-content-between align-items-center">
+                                            <a href="#" class="list-group-item border-1 border-dark">
+                                                <li class="d-flex justify-content-between">
                                                     <strong>Terror</strong>
-                                                    <span class="badge bg-danger rounded-pill">1</span>
+                                                    <span class="badge bg-dark rounded-circle">1</span>
                                                 </li>
                                             </a>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="card-footer d-none d-md-block">
-                                    <h6>Patrocinador: <strong>RollingCodeSchool</strong></h6>
+                                <div class="card-footer d-none d-lg-block">
+                                    <h6 class="animate__animated animate__flip">Patrocinador:
+                                        <strong>RollingCodeSchool</strong>
+                                    </h6>
                                     <div class="ratio ratio-16x9">
                                         <iframe width="560" height="315"
                                             src="https://www.youtube-nocookie.com/embed/gH8AionIVB0?controls=0&showinfo=0&modestbranding=1&rel=0"
@@ -281,48 +300,55 @@
     </main>
     <!-- MAIN FIN-->
     <!-- PIE INICIO-->
-    <footer class="container-fluid">
-        <div class="row bg-danger">
-            <section class="col-sm-12 col-md-4">
-                <img src="./img/logo.png" alt="" class="img-fluid d-block w-75 m-auto">
+    <footer class="container">
+        <div class="row p-2 m-auto">
+            <section class="col-sm-12 col-md-4 m-auto">
+                <img src="./img/logo.png" alt="" class="img-fluid d-block w-50 m-auto">
             </section>
-            <section class="col-sm-12 col-md-4 text-center m-auto">
+            <section class="footerIcon col-sm-12 col-md-4 text-center m-auto">
                 <div class="row">
                     <h4>Social</h4>
                 </div>
                 <div class="row d-block">
-                    <a href="https://wa.me/5493816423430" class="text-decoration-none" target="_blank">
-                        <i class="bi bi-whatsapp"></i>
-                    </a>
-                    <a href="https://www.facebook.com/orregoe/" class="text-decoration-none" target="_blank">
+                    <a href="#" class="text-decoration-none text-light fs-3" target="_blank">
                         <i class="bi bi-facebook"></i>
                     </a>
-                    <a href="https://www.instagram.com/orregoe/" class="text-decoration-none" target="_blank">
+                    <a href="#" class="text-decoration-none text-light fs-3" target="_blank">
                         <i class="bi bi-instagram"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/orregoe/" class="text-decoration-none" target="_blank">
-                        <i class="bi bi-linkedin"></i>
+                    <a href="#" class="text-decoration-none text-light fs-3" target="_blank">
+                        <i class="bi bi-twitter"></i>
                     </a>
-                    <a href="https://github.com/eOrrego" class="text-decoration-none" target="_blank">
-                        <i class="bi bi-github"></i>
+                    <a href="#" class="text-decoration-none text-light fs-3" target="_blank">
+                        <i class="bi bi-tiktok"></i>
                     </a>
                 </div>
             </section>
             <section class="col-sm-12 col-md-4 m-auto d-none d-md-block">
-                <div>
-                    <h5>Informacion</h5>
-                </div>
-                <div>
-                    <ul>
-                        <li>Nota legal</li>
-                        <li>Politicas de privacidad</li>
-                    </ul>
-                </div>
+                <ul>
+                    <li class="list list-group-item bg-transparent text-light border-0 m-auto fw-bolder">Informacion
+                    </li>
+                    <a href="" class="text-decoration-none">
+                        <li class="list list-group-item bg-transparent text-light border-0 m-auto">Nota legal</li>
+                    </a>
+                    <a href="" class="text-decoration-none">
+                        <li class="list list-group-item bg-transparent text-light border-0 m-auto">Politicas de
+                            privacidad</li>
+                    </a>
+                </ul>
             </section>
+            <div class="row m-auto p-0 text-center fw-light">
+                <span class="text-dark mt-2">Copyright <a href="#" class="text-decoration-none text-muted"
+                        target="_blank">&copy;</a> 2022 <strong>Grupo IV elmejor</strong> - All Rights
+                    Reserved</span>
+            </div>
         </div>
     </footer>
     <!-- PIE FIN-->
 
+    <!-- jQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.min.js">
+    </script>
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
@@ -333,6 +359,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+
+    <script>
+        $(window).scroll(function () {
+            if ($("#menu").offset().top > 56) {
+                $("#menu").addClass("bgNavbar");
+            } else {
+                $("#menu").removeClass("bgNavbar");
+            }
+        });
+    </script>
 </body>
 
 </html>

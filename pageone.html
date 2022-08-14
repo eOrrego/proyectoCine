@@ -12,50 +12,54 @@
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
+    <!-- ANIMATECSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="index.css">
+    
     <title>Proyecto cine</title>
 </head>
 
-<body class="container-fluid p-3 m-auto">
+<body class="container-fluid">
     <!-- CABECERA INICIO-->
     <header>
         <!-- NAVBAR INICIO-->
         <section class="navbarCine">
-            <nav class="navbar fixed-top navbar-expand-md navbar-light bg-transparent">
-                <a class="navbar-brand text-light fw-bolder" href="#">
-                    <img class="img-fluid mx-5" src="./img/logo.png" alt="Logo Adam Sandler" width="130">
-                </a>
+            <nav id="menu" class="navbar navbar-expand-lg navbar-dark fixed-top">
                 <div class="container">
+                    <a class="navbar-brand text-light fw-bolder" href="#">
+                        <img class="img-fluid" src="./img/logo.png" alt="Logo Adam Sandler" width="130">
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item dropdown mx-5">
-                                <a class="nav-link dropdown-toggle text-light fw-bolder bg-danger rounded-pill p-3"
-                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Peliculas
+                        <ul class="navbar-nav ms-auto animate__animated animate__backInLeft">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <strong>Peliculas</strong>
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Billy Madiso</a></li>
                                     <li><a class="dropdown-item" href="#">Un Papá Genial</a></li>
                                     <li><a class="dropdown-item" href="#">Little Nicky</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item mx-5">
-                                <a class="nav-link active text-light fw-bolder bg-danger rounded-pill p-3"
-                                    aria-current="page" href="#">Acerca de
-                                    Nosotros</a>
+                            <li class="nav-item">
+                                <a class="nav-link text-light active" aria-current="page" href="#"><strong>Acerca de
+                                        Nosotros</strong></a>
                             </li>
-                            <li class="nav-item mx-5">
-                                <a class="nav-link text-light fw-bolder bg-danger rounded-pill p-3" aria-current="page"
-                                    href="#">Contacto</a>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" aria-current="page"
+                                    href="#"><strong>Contacto</strong></a>
                             </li>
                         </ul>
-                        <button class="btn btn-danger mx-2" type="button">Suscripcion</button>
-                        <button class="btn btn-danger mx-2" type="button">Login</button>
+                        <button class="btn btn-outline-danger bg-transparent" type="button">Suscripcion</button>
+                        <button class="btn btn-outline-danger" type="button">Login</button>
                     </div>
                 </div>
             </nav>
@@ -102,7 +106,8 @@
                                 <img class="img-fluid img-thumbnail"
                                     src="https://m.media-amazon.com/images/M/MV5BMjQyNzM2MjM1Ml5BMl5BanBnXkFtZTcwMDE5NjI3Mg@@._V1_UY317_CR7,0,214,317_AL_.jpg"
                                     alt="">
-                                <p class="text-start"><strong>Adam Richard Sandler</strong> nació el 9 de septiembre de 1966 en Brooklyn, Nueva York, hijo
+                                <p class="text-start"><strong>Adam Richard Sandler</strong> nació el 9 de septiembre de
+                                    1966 en Brooklyn, Nueva York, hijo
                                     de Judith (Levine), maestra de una guardería, y Stanley Alan Sandler, ingeniero
                                     eléctrico. Él es de ascendencia judía rusa. A los 17, dio su primer paso para
                                     convertirse en un comediante cuando subió espontáneamente al escenario en un club de
@@ -340,6 +345,9 @@
     </footer>
     <!-- PIE FIN-->
 
+    <!-- jQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.min.js">
+    </script>
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
@@ -350,6 +358,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+
+    <script>
+        $(window).scroll(function () {
+            if ($("#menu").offset().top > 56) {
+                $("#menu").addClass("bg-dark");
+            } else {
+                $("#menu").removeClass("bg-dark");
+            }
+        });
+    </script>
 </body>
 
 </html>

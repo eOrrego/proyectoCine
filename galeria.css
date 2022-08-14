@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0px!important;
 }
 
 h1 {
@@ -31,7 +32,7 @@ h1 {
 .galeria img {
     width: 180px;
     height: 280px;
-
+    border: 2px solid #fff;
 }
 
 .modal {
@@ -86,9 +87,9 @@ h1 {
     display: block;
 }
 
-img {
+/* img {
     border: 2px solid #fff;
-}
+} */
 
 .bg-p-imgMo {
     display: block;
@@ -117,4 +118,8 @@ img {
 .cerrar:hover {
     box-shadow: 5px 5px 10px rgb(34, 34, 34);
     transform: translateY(-5%);
+}
+
+.bg-dark{
+    transition: all 1s ease;
 }
