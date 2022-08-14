@@ -26,44 +26,51 @@
 </head>
 
 <body class="container-fluid">
-    <!-- CABECERA INICIO-->
     <header>
         <!-- NAVBAR INICIO-->
         <section class="navbarCine">
-            <nav id="menu" class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <nav id="menu" class="navbar navbar-expand-lg navbar-dark">
                 <div class="container">
-                    <a class="navbar-brand text-light fw-bolder" href="#">
-                        <img class="img-fluid" src="./img/logo.png" alt="Logo Adam Sandler" width="130">
+                    <a class="navbar-brand animate__animated animate__heartBeat" href="./index.html">
+                        <img class="img-fluid" src="./img/logo.png" alt="Logo Adam Sandler" width="150">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto animate__animated animate__backInLeft">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown"
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="user-select-none navbar-nav m-auto animate__animated animate__backInDown">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-light active fs-5" aria-current="page"
+                                    href="./index.html"><strong>HOME</strong></a>
+                            </li>
+                            <li class="nav-item dropdown mx-2">
+                                <a class="nav-link dropdown-toggle text-light fs-5" href="#" id="navbarDropdown"
                                     role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <strong>Peliculas</strong>
+                                    <strong>SECCIONES</strong>
                                 </a>
-                                <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Billy Madiso</a></li>
-                                    <li><a class="dropdown-item" href="#">Un Papá Genial</a></li>
-                                    <li><a class="dropdown-item" href="#">Little Nicky</a></li>
+                                <ul class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item fs-5 fw-bolder" href="./pagegallery.html">Peliculas</a>
+                                    </li>
+                                    <li><a class="dropdown-item fs-5 fw-bolder" href="./page404.html">Fan Club</a>
+                                    </li>
+                                    <li><a class="dropdown-item fs-5 fw-bolder" href="#">Acerca de Nosotros</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light active" aria-current="page" href="#"><strong>Acerca de
-                                        Nosotros</strong></a>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-light fs-5" aria-current="page"
+                                    href="./page404.html"><strong>BIOGRAFIA</strong></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" aria-current="page"
-                                    href="#"><strong>Contacto</strong></a>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-light fs-5" aria-current="page"
+                                    href="#"><strong>CONTACTO</strong></a>
                             </li>
                         </ul>
-                        <button class="btn btn-outline-danger bg-transparent" type="button">Suscripcion</button>
-                        <button class="btn btn-outline-danger" type="button">Login</button>
+                        <div id="buttonNav" class="d-grid gap-2 d-lg-block animate__animated animate__heartBeat">
+                            <a href="#link" class="btn fw-bolder mx-lg-1 rounded-0" role="button">SUSCRIBIRME</a>
+                            <a href="./login.html" class="btn fw-bolder mx-lg-1 rounded-0" role="button">LOGIN</a>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -71,16 +78,80 @@
         <!-- NAVBAR FIN-->
         <!-- CARRUSEL INICIO-->
         <section class="carruselCine">
-            <img src="./img/1920x700.jpeg" class="d-block w-100" alt="...">
+            <img src="./img/1920x700_03.png" class="img-fluid d-block d-lg-none" alt="...">
+            <div id="carouselExampleCaptions" class="carousel carousel-dark slide carousel-fade d-none d-lg-block"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner user-select-none">
+                    <div class="carousel-item active">
+                        <img src="./img/1920x700_03.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h5 class="bg-transparent text-light fs-2 fw-bold animate__animated animate__rubberBand">
+                                BIOGRAFÍA</h5>
+                            <p class="bg-transparent text-light fs-5 animate__animated animate__tada">Adam Sandler, es
+                                un actor, guionista y productor de cine estadounidense</p>
+                            <a href="./pageone.html">
+                                <button type="button"
+                                    class="btn btn-lg fw-bolder rounded-0 animate__animated animate__heartBeat">VER
+                                    MAS</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/sandlerPeliculas.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h5 class="bg-transparent text-light fs-2 fw-bold animate__animated animate__rubberBand">
+                                PELICULAS</h5>
+                            <p class="bg-transparent text-light fs-5 animate__animated animate__tada">Galeria con las
+                                peliculas mas vistas de Adam Sandler</p>
+                            <a href="./pagegallery.html">
+                                <button type="button"
+                                    class="btn btn-lg fw-bolder rounded-0 animate__animated animate__heartBeat">VER
+                                    MAS</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/hustleNetflix.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h5 class="bg-transparent text-light fs-2 fw-bold animate__animated animate__rubberBand">
+                                HUSTLE - NETFLIX</h5>
+                            <p class="bg-transparent text-light fs-5 animate__animated animate__tada">El nuevo drama
+                                deportivo de Adam Sandler</p>
+                            <a href="./page404.html">
+                                <button type="button"
+                                    class="btn btn-lg fw-bolder rounded-0 animate__animated animate__heartBeat">VER
+                                    MAS</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
         <!-- CARRUSEL FIN-->
     </header>
-    <!-- CABECERA FIN-->
-    <!-- MAIN INICIO-->
     <main class="container-fluid">
         <div class="row p-1 mt-1">
             <section>
-                <h1>Galeria de Imagenes</h1>
+                <h2 class="m-5 text-center">Algunas de las películas de Adam Sandler ordenadas de peor a mejor</h2>
+                <h6 class="m-5 text-center">Aunque Adam ha grabado bastantes películas sin relevancia , también tiene en su curriculum algunas verdaderas joyas. <br> Recordamos algunas de peor a mejor.</h6>
                 <ul class="galeria">
                     <li><a href="#imgMo1" id="img1"><img src="./imagenes/1498163681-02-ridiculous-six-xlg.jpg"
                                 alt="imagegallery"></a></li>
@@ -325,43 +396,47 @@
     <!-- MAIN FIN-->
     <!-- PIE INICIO-->
     <footer class="container-fluid">
-        <div class="row bg-danger">
-            <section class="col-sm-12 col-md-4">
-                <img src="./img/logo.png" alt="" class="img-fluid d-block w-75 m-auto">
+        <div class="row p-2 m-auto">
+            <section class="col-sm-12 col-md-4 m-auto">
+                <img src="./img/logo.png" alt="" class="img-fluid d-block w-50 m-auto">
             </section>
-            <section class="col-sm-12 col-md-4 text-center m-auto">
+            <section class="footerIcon col-sm-12 col-md-4 text-center m-auto">
                 <div class="row">
                     <h4>Social</h4>
                 </div>
                 <div class="row d-block">
-                    <a href="https://wa.me/5493816423430" class="text-decoration-none" target="_blank">
-                        <i class="bi bi-whatsapp"></i>
-                    </a>
-                    <a href="https://www.facebook.com/orregoe/" class="text-decoration-none" target="_blank">
+                    <a href="#" class="text-decoration-none text-light fs-3" target="_blank">
                         <i class="bi bi-facebook"></i>
                     </a>
-                    <a href="https://www.instagram.com/orregoe/" class="text-decoration-none" target="_blank">
+                    <a href="#" class="text-decoration-none text-light fs-3" target="_blank">
                         <i class="bi bi-instagram"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/orregoe/" class="text-decoration-none" target="_blank">
-                        <i class="bi bi-linkedin"></i>
+                    <a href="#" class="text-decoration-none text-light fs-3" target="_blank">
+                        <i class="bi bi-twitter"></i>
                     </a>
-                    <a href="https://github.com/eOrrego" class="text-decoration-none" target="_blank">
-                        <i class="bi bi-github"></i>
+                    <a href="#" class="text-decoration-none text-light fs-3" target="_blank">
+                        <i class="bi bi-tiktok"></i>
                     </a>
                 </div>
             </section>
             <section class="col-sm-12 col-md-4 m-auto d-none d-md-block">
-                <div>
-                    <h5>Informacion</h5>
-                </div>
-                <div>
-                    <ul>
-                        <li>Nota legal</li>
-                        <li>Politicas de privacidad</li>
-                    </ul>
-                </div>
+                <ul>
+                    <li class="list list-group-item bg-transparent text-light border-0 m-auto fw-bolder">Informacion
+                    </li>
+                    <a href="" class="text-decoration-none">
+                        <li class="list list-group-item bg-transparent text-light border-0 m-auto">Nota legal</li>
+                    </a>
+                    <a href="" class="text-decoration-none">
+                        <li class="list list-group-item bg-transparent text-light border-0 m-auto">Politicas de
+                            privacidad</li>
+                    </a>
+                </ul>
             </section>
+            <div class="row m-auto p-0 text-center fw-light">
+                <span class="text-dark mt-2">Copyright <a href="#" class="text-decoration-none text-muted"
+                        target="_blank">&copy;</a> 2022 <strong>Grupo IV elmejor</strong> - All Rights
+                    Reserved</span>
+            </div>
         </div>
     </footer>
     <!-- PIE FIN-->
@@ -383,12 +458,13 @@
     <script>
         $(window).scroll(function () {
             if ($("#menu").offset().top > 56) {
-                $("#menu").addClass("bg-dark");
+                $("#menu").addClass("bgNavbar");
             } else {
-                $("#menu").removeClass("bg-dark");
+                $("#menu").removeClass("bgNavbar");
             }
         });
     </script>
-</body>
+    
+    </body>
 
 </html>
