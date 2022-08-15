@@ -17,7 +17,8 @@
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="index.css">
-    
+    <link rel="stylesheet" href="pageone.css">
+
     <title>Proyecto cine</title>
 </head>
 
@@ -26,87 +27,95 @@
     <header>
         <!-- NAVBAR INICIO-->
         <section class="navbarCine">
-            <nav id="menu" class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <nav id="menu" class="navbar navbar-expand-lg navbar-dark">
                 <div class="container">
-                    <a class="navbar-brand text-light fw-bolder" href="#">
-                        <img class="img-fluid" src="./img/logo.png" alt="Logo Adam Sandler" width="130">
+                    <a class="navbar-brand animate__animated animate__heartBeat" href="./index.html">
+                        <img class="img-fluid" src="./img/logoft.png" alt="Logo Adam Sandler" width="150">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto animate__animated animate__backInLeft">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown"
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="user-select-none navbar-nav m-auto animate__animated animate__backInDown">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-light active fs-5" aria-current="page"
+                                    href="./index.html"><strong>HOME</strong></a>
+                            </li>
+                            <li class="nav-item dropdown mx-2">
+                                <a class="nav-link dropdown-toggle text-light fs-5" href="#" id="navbarDropdown"
                                     role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <strong>Peliculas</strong>
+                                    <strong>SECCIONES</strong>
                                 </a>
-                                <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Billy Madiso</a></li>
-                                    <li><a class="dropdown-item" href="#">Un Papá Genial</a></li>
-                                    <li><a class="dropdown-item" href="#">Little Nicky</a></li>
+                                <ul class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item fs-5 fw-bolder" href="./pagegallery.html">Peliculas</a>
+                                    </li>
+                                    <li><a class="dropdown-item fs-5 fw-bolder" href="./page404.html">Fan Club</a>
+                                    </li>
+                                    <li><a class="dropdown-item fs-5 fw-bolder" href="./pageADN.html">Acerca de
+                                            Nosotros</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light active" aria-current="page" href="#"><strong>Acerca de
-                                        Nosotros</strong></a>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-light fs-5" aria-current="page"
+                                    href="./pageone.html"><strong>BIOGRAFIA</strong></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" aria-current="page"
-                                    href="#"><strong>Contacto</strong></a>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-light fs-5" aria-current="page"
+                                    href="#"><strong>CONTACTO</strong></a>
                             </li>
                         </ul>
-                        <button class="btn btn-outline-danger bg-transparent" type="button">Suscripcion</button>
-                        <button class="btn btn-outline-danger" type="button">Login</button>
+                        <div id="buttonNav" class="d-grid gap-2 d-lg-block animate__animated animate__heartBeat">
+                            <a href="#link" class="btn fw-bolder mx-lg-1 rounded-0" role="button" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">SUSCRIBIRSE</a>
+                            <a href="./login.html" class="btn fw-bolder mx-lg-1 rounded-0" role="button">LOGIN</a>
+                        </div>
                     </div>
                 </div>
             </nav>
         </section>
         <!-- NAVBAR FIN-->
-        <!-- BANER INICIO-->
-        <section class="carruselCine">
-            <img src="./img/1920x700.jpeg" class="d-block w-100" alt="...">
+        <!-- CARRUSEL INICIO-->
+        <section class="imgBanner">
+            <img src="./img/sandlerBiografia.jpg" class="img-fluid d-block" alt="...">
         </section>
-        <!-- BANER FIN-->
+        <!-- CARRUSEL FIN-->
     </header>
     <!-- CABECERA FIN-->
     <!-- MAIN INICIO-->
-    <main class="container-fluid">
-        <div class="row p-1 mt-1">
-            <section class="col-12 col-md-8">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Pelicula 1</li>
-                    </ol>
-                </nav>
+    <main class="container my-3">
+        <div class="row">
+            <section class="col-12 col-lg-8">
                 <div class="row">
-                    <div class="col-12 col-md-4">
-                        <div class="list-group" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action active bg-danger" id="list-home-list"
-                                data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Sobre el
-                                actor</a>
-                            <a class="list-group-item list-group-item-action bg-danger" id="list-profile-list"
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-danger">Inicio</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Biografia</li>
+                        </ol>
+                    </nav>
+                    <div class="col-12 col-lg-4">
+                        <div class="asideIndice list-group rounded-0" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active fw-bolder" id="list-home-list"
+                                data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">SOBRE EL
+                                ACTOR</a>
+                            <a class="list-group-item list-group-item-action fw-bolder" id="list-profile-list"
                                 data-bs-toggle="list" href="#list-profile" role="tab"
-                                aria-controls="list-profile">Pelicula</a>
-                            <a class="list-group-item list-group-item-action bg-danger" id="list-messages-list"
+                                aria-controls="list-profile">HISTORIA</a>
+                            <a class="list-group-item list-group-item-action fw-bolder" id="list-messages-list"
                                 data-bs-toggle="list" href="#list-messages" role="tab"
-                                aria-controls="list-messages">Criticas</a>
-                            <a class="list-group-item list-group-item-action bg-danger" id="list-settings-list"
+                                aria-controls="list-messages">NOVEDADES</a>
+                            <a class="list-group-item list-group-item-action fw-bolder" id="list-settings-list"
                                 data-bs-toggle="list" href="#list-settings" role="tab"
-                                aria-controls="list-settings">trailer</a>
+                                aria-controls="list-settings">INFORMACION</a>
                         </div>
                     </div>
                     <div class="col-12 col-md-8">
                         <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active text-center" id="list-home" role="tabpanel"
+                            <div class="tab-pane fade show active" id="list-home" role="tabpanel"
                                 aria-labelledby="list-home-list">
-                                <img class="img-fluid img-thumbnail"
-                                    src="https://m.media-amazon.com/images/M/MV5BMjQyNzM2MjM1Ml5BMl5BanBnXkFtZTcwMDE5NjI3Mg@@._V1_UY317_CR7,0,214,317_AL_.jpg"
-                                    alt="">
-                                <p class="text-start"><strong>Adam Richard Sandler</strong> nació el 9 de septiembre de
+                                <img class="img-fluid img-thumbnail mb-3 rounded-0" src="./img/sandlerBio.jpg" alt="">
+                                <p><strong>Adam Richard Sandler</strong> nació el 9 de septiembre de
                                     1966 en Brooklyn, Nueva York, hijo
                                     de Judith (Levine), maestra de una guardería, y Stanley Alan Sandler, ingeniero
                                     eléctrico. Él es de ascendencia judía rusa. A los 17, dio su primer paso para
@@ -116,176 +125,127 @@
                                     Artes en 1991) actuando regularmente en clubes y universidades.</p>
                             </div>
                             <div class="tab-pane fade" id="list-profile" role="tabpanel"
-                                aria-labelledby="list-profile-list">Lorem ipsum dolor sit amet consectetur
-                                adipisicing
-                                elit. Tempora, nemo sint minima consequuntur, aspernatur aut laboriosam pariatur, ad
-                                iusto animi quas laudantium voluptates beatae. Doloribus consectetur asperiores
-                                aspernatur provident molestias.
-                                Nostrum cumque illum, pariatur accusamus, tempore sunt quaerat qui ipsam quae optio,
-                                sapiente quis non quo aspernatur minima incidunt in consectetur impedit. Praesentium
-                                soluta dolor eaque facere aliquid odio architecto!
-                                Corrupti ipsam, repellendus officiis harum cumque quaerat quo cum. Ipsam eum
-                                molestias
-                                illo deserunt distinctio perferendis labore inventore similique, natus dolorum
-                                veniam,
-                                fugiat eveniet repellendus expedita impedit unde, ducimus et!
-                                Ipsum fugiat, voluptas illo eum ut, dolor, exercitationem nostrum possimus hic
-                                reprehenderit quas unde at! Sit, repellendus. Voluptate dolores saepe, animi, quas
-                                ducimus modi incidunt reprehenderit adipisci tempora at magni?
-                                Quibusdam, animi possimus nobis voluptates hic repellendus? Maiores, unde quas eius,
-                                corporis sint rerum laudantium corrupti molestiae omnis cumque voluptas, natus
-                                deleniti
-                                voluptates. Nihil quaerat ullam, magni ducimus illo esse.</div>
+                                aria-labelledby="list-profile-list">
+                                <div class="ratio ratio-16x9 mb-3">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/IihOea50h2g?controls=0"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <p>Las películas de 1998 The Waterboy y The Wedding Singer ayudaron a lanzar la carrera
+                                    de Adam Sandler en cine, y su compañía de producción. Sandler produjo The Waterboy y
+                                    fue coautor del guion junto a Tim Herlihy. La película generó muchas ganancias,
+                                    recaudando más de 160 millones de dólares solamente en los Estados Unidos,
+                                    convirtiendo a Sandler en un actor exitoso luego de lograr su segunda película ganar
+                                    más de 100 millones de dólares en el año (la primera fue The Wedding Singer).</p>
+                            </div>
                             <div class="tab-pane fade" id="list-messages" role="tabpanel"
-                                aria-labelledby="list-messages-list">Lorem ipsum dolor sit amet consectetur
-                                adipisicing
-                                elit. Amet autem nobis est porro numquam necessitatibus atque consequatur repellat,
-                                error nemo perspiciatis deserunt dicta nam, doloribus at, eum in distinctio tenetur.
-                                Nostrum molestiae placeat, animi at neque sequi quaerat amet ea nisi in
-                                exercitationem
-                                repellat tempora modi ab error dignissimos blanditiis, fugiat esse obcaecati
-                                quisquam
-                                numquam? Similique impedit quibusdam recusandae minima.
-                                Beatae accusantium sit, perferendis repudiandae eaque porro sequi doloribus debitis
-                                aspernatur autem eligendi ipsum expedita fuga ipsa, accusamus, sunt optio quisquam.
-                                Architecto ad, mollitia tempore placeat fugit vitae. Ab, ipsam.</div>
+                                aria-labelledby="list-messages-list">
+                                <img class="img-fluid img-thumbnail mb-3 rounded-0" src="./img/sandlerNovedades.jpg"
+                                    alt="">
+                                <p>La mayoría de las películas producidas por esta compañía son protagonizadas por Adam
+                                    Sandler, acompañado generalmente con Rob Schneider, David Spade, Steve Buscemi,
+                                    Kevin James, Chris Rock, Chris Farley, John Turturro, Nick Swardson, Jon Lovitz,
+                                    Henry Winkler, Allen Covert, Kevin Nealon, Blake Clark, Jonathan Loughran,Peter
+                                    Dante Y Shaquille O'Neal.</p>
+                            </div>
                             <div class="tab-pane fade" id="list-settings" role="tabpanel"
-                                aria-labelledby="list-settings-list">Lorem ipsum dolor sit, amet consectetur
-                                adipisicing
-                                elit. Est, consequuntur reiciendis itaque totam et quae magni nostrum alias,
-                                assumenda
-                                optio neque modi doloribus accusantium fuga obcaecati veritatis repudiandae dolores
-                                id.
-                                Dolor, pariatur officiis placeat in soluta aspernatur laudantium similique dicta
-                                minima?
-                                Tempora aliquid, maiores libero voluptas dolor recusandae minus error suscipit
-                                voluptatem eum nisi laudantium blanditiis veniam quae ex hic.
-                                Sed rem dolore, blanditiis tempore illo ea ab modi accusamus, asperiores, corrupti
-                                nihil
-                                labore! Distinctio numquam nisi laborum ut esse a aperiam nihil tempora, atque,
-                                velit
-                                eos architecto. Inventore, alias.
-                                Officia reprehenderit nobis iusto, doloremque quaerat corporis voluptatibus
-                                quibusdam
-                                expedita animi? Rem incidunt quis laudantium omnis cumque, dolorem, nesciunt
-                                assumenda
-                                dignissimos maxime accusantium, recusandae minus facilis qui nulla laboriosam
-                                aperiam?
-                                Nobis temporibus esse fugit iste, corporis itaque, alias, praesentium hic et
-                                similique
-                                iure saepe at quod. Reiciendis corporis aut sunt minima eligendi, cumque impedit
-                                repellendus doloremque, consequuntur recusandae ipsa. Quis?
-                                Esse aperiam iure excepturi? Sunt optio ea quod distinctio quam consectetur totam
-                                earum,
-                                consequuntur fugiat magni fuga a, ipsam porro aspernatur quisquam non culpa. A
-                                ducimus
-                                accusantium facilis assumenda fuga.
-                                Debitis explicabo corrupti dolores totam repellendus adipisci quos quae delectus
-                                alias
-                                iste? Saepe voluptate eos ullam beatae, cupiditate veritatis totam fugit distinctio
-                                aliquid exercitationem earum odio molestias, veniam aliquam laboriosam.
-                                In, corporis? Nesciunt officiis fugiat cupiditate modi. Accusantium ipsum incidunt
-                                assumenda dolor laboriosam quo sed quia et? Perspiciatis ad labore iure ipsam
-                                aliquid
-                                commodi quas animi consectetur quasi, nemo inventore?
-                                Sint, iure impedit. Ipsam voluptatum explicabo in corporis asperiores, deserunt
-                                temporibus totam. Adipisci dolor, totam suscipit tenetur, vero veritatis, quaerat
-                                perspiciatis iure soluta quam illum! Mollitia totam dicta enim quibusdam!
-                                Quisquam facere laborum vero, repudiandae quidem vel, dignissimos et earum maxime
-                                rem
-                                unde. Corrupti, reprehenderit dolores animi dolor deserunt reiciendis accusamus
-                                atque
-                                maiores repellat ea quae modi autem itaque eius.</div>
+                                aria-labelledby="list-settings-list">
+                                <img class="img-fluid img-thumbnail mb-3 rounded-0" src="./img/sandlerInfo.jpg"
+                                    alt="">
+                                <p>La mayoría de las películas producidas por esta compañía son protagonizadas por Adam
+                                    Sandler, acompañado generalmente con Rob Schneider, David Spade, Steve Buscemi,
+                                    Kevin James, Chris Rock, Chris Farley, John Turturro, Nick Swardson, Jon Lovitz,
+                                    Henry Winkler, Allen Covert, Kevin Nealon, Blake Clark, Jonathan Loughran,Peter
+                                    Dante Y Shaquille O'Neal.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="col-12 col-md-4">
-                <div class="row">
+            <section class="col-12 col-lg-4">
+                <div class="row aside">
                     <div class="col">
-                        <p class="col d-block d-md-none">
-                            <a class="btn btn-danger d-block" data-bs-toggle="collapse" href="#multiCollapseExample1"
-                                role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Busqueda y
-                                Categorias</a>
+                        <p class="col d-block d-lg-none btnMenu">
+                            <a class="btn d-block mt-3 rounded-0 fw-bolder" data-bs-toggle="collapse"
+                                href="#multiCollapseExample1" role="button" aria-expanded="false"
+                                aria-controls="multiCollapseExample1">MENU</a>
                         </p>
-                        <div class="collapse multi-collapse d-md-flex" id="multiCollapseExample1">
-                            <div class="card h-100 border-danger bg-danger w-100">
-                                <div class="card-header m-auto">
-                                    <!-- <h4>Menu</h4> -->
+                        <div class="collapse multi-collapse d-lg-flex" id="multiCollapseExample1">
+                            <div class="card h-100 rounded-0">
+                                <div class="card-header border-light border-3 m-auto">
                                     <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-                                                data-bs-target="#home" type="button" role="tab" aria-controls="home"
-                                                aria-selected="true">Busqueda</button>
+                                            <button class="nav-link active fw-bolder rounded-top" id="home-tab"
+                                                data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab"
+                                                aria-controls="home" aria-selected="true">Busqueda</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
-                                                data-bs-target="#profile" type="button" role="tab"
+                                            <button class="nav-link fw-bolder rounded-top" id="profile-tab"
+                                                data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab"
                                                 aria-controls="profile" aria-selected="false">Categorias</button>
                                         </li>
                                     </ul>
                                 </div>
-                                <img src="./img/logo.png" class="card-img-top img-fluid w-50 m-auto" alt="...">
+                                <img src="./img/HM_logo.png" class="card-img-top img-fluid m-auto p-3" alt="...">
                                 <div class="tab-content" id="myTabContent">
                                     <div class="card-body tab-pane fade show active" id="home" role="tabpanel"
                                         aria-labelledby="home-tab">
-                                        <h6 class="card-title mb-3">Buscar entradas del blog</h6>
+                                        <h5 class="card-title fw-bolder">Buscar en blog</h5>
                                         <form class="card-text d-flex">
-                                            <input class="form-control me-2" type="search" aria-label="Search">
-                                            <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                                            <input class="form-control me-2 rounded-0" type="search"
+                                                aria-label="Search">
+                                            <button class="btn rounded-0 fw-bolder" type="submit">BUSCAR</button>
                                         </form>
                                     </div>
                                     <div class="card-body tab-pane fade" id="profile" role="tabpanel"
                                         aria-labelledby="profile-tab">
-                                        <h6 class="card-title mb-3">Generos de Peliculas</h6>
-                                        <ul class="card-text list-group">
-                                            <a href="#"
-                                                class="list-group-item list-group-item-action list-group-item-danger">
-                                                <li class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title">Generos de Peliculas</h5>
+                                        <ul class="card-text list-group rounded-0">
+                                            <a href="#" class="list-group-item border-1 border-dark">
+                                                <li class="d-flex justify-content-between">
                                                     <strong>Accion</strong>
-                                                    <span class="badge bg-danger rounded-pill">5</span>
+                                                    <span class="badge bg-dark rounded-circle">5</span>
                                                 </li>
                                             </a>
-                                            <a href="#"
-                                                class="list-group-item list-group-item-action list-group-item-danger">
-                                                <li class="d-flex justify-content-between align-items-center">
+                                            <a href="#" class="list-group-item border-1 border-dark">
+                                                <li class="d-flex justify-content-between">
                                                     <strong>Ciencia Ficcion</strong>
-                                                    <span class="badge bg-danger rounded-pill">2</span>
+                                                    <span class="badge bg-dark rounded-circle">2</span>
                                                 </li>
                                             </a>
-                                            <a href="#"
-                                                class="list-group-item list-group-item-action list-group-item-danger">
-                                                <li class="d-flex justify-content-between align-items-center">
+                                            <a href="#" class="list-group-item border-1 border-dark">
+                                                <li class="d-flex justify-content-between">
                                                     <strong>Comedia</strong>
-                                                    <span class="badge bg-danger rounded-pill">8</span>
+                                                    <span class="badge bg-dark rounded-circle">8</span>
                                                 </li>
                                             </a>
-                                            <a href="#"
-                                                class="list-group-item list-group-item-action list-group-item-danger">
-                                                <li class="d-flex justify-content-between align-items-center">
+                                            <a href="#" class="list-group-item border-1 border-dark">
+                                                <li class="d-flex justify-content-between">
                                                     <strong>Drama</strong>
-                                                    <span class="badge bg-danger rounded-pill">2</span>
+                                                    <span class="badge bg-dark rounded-circle">2</span>
                                                 </li>
                                             </a>
-                                            <a href="#"
-                                                class="list-group-item list-group-item-action list-group-item-danger">
-                                                <li class="d-flex justify-content-between align-items-center">
+                                            <a href="#" class="list-group-item border-1 border-dark">
+                                                <li class="d-flex justify-content-between">
                                                     <strong>Suspenso</strong>
-                                                    <span class="badge bg-danger rounded-pill">1</span>
+                                                    <span class="badge bg-dark rounded-circle">1</span>
                                                 </li>
                                             </a>
-                                            <a href="#"
-                                                class="list-group-item list-group-item-action list-group-item-danger">
-                                                <li class="d-flex justify-content-between align-items-center">
+                                            <a href="#" class="list-group-item border-1 border-dark">
+                                                <li class="d-flex justify-content-between">
                                                     <strong>Terror</strong>
-                                                    <span class="badge bg-danger rounded-pill">1</span>
+                                                    <span class="badge bg-dark rounded-circle">1</span>
                                                 </li>
                                             </a>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="card-footer d-none d-md-block">
-                                    <h6>Patrocinador: <strong>RollingCodeSchool</strong></h6>
+                                <div class="card-footer d-none d-lg-block">
+                                    <h6 class="animate__animated animate__flip">Patrocinador:
+                                        <strong>RollingCodeSchool</strong>
+                                    </h6>
                                     <div class="ratio ratio-16x9">
                                         <iframe width="560" height="315"
                                             src="https://www.youtube-nocookie.com/embed/gH8AionIVB0?controls=0&showinfo=0&modestbranding=1&rel=0"
@@ -304,46 +264,122 @@
     <!-- MAIN FIN-->
     <!-- PIE INICIO-->
     <footer class="container-fluid">
-        <div class="row bg-danger">
-            <section class="col-sm-12 col-md-4">
-                <img src="./img/logo.png" alt="" class="img-fluid d-block w-75 m-auto">
+        <div class="row p-2 m-auto text-center">
+            <section class="col-sm-12 col-md-4 m-auto">
+                <img src="./img/logoft.png" alt="" class="img-fluid d-block w-50 m-auto">
             </section>
-            <section class="col-sm-12 col-md-4 text-center m-auto">
+            <section class="footerIcon col-sm-12 col-md-4 text-center m-auto">
                 <div class="row">
                     <h4>Social</h4>
                 </div>
                 <div class="row d-block">
-                    <a href="https://wa.me/5493816423430" class="text-decoration-none" target="_blank">
-                        <i class="bi bi-whatsapp"></i>
-                    </a>
-                    <a href="https://www.facebook.com/orregoe/" class="text-decoration-none" target="_blank">
+                    <a href="#" class="text-decoration-none text-light fs-3" target="_blank">
                         <i class="bi bi-facebook"></i>
                     </a>
-                    <a href="https://www.instagram.com/orregoe/" class="text-decoration-none" target="_blank">
+                    <a href="#" class="text-decoration-none text-light fs-3" target="_blank">
                         <i class="bi bi-instagram"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/orregoe/" class="text-decoration-none" target="_blank">
-                        <i class="bi bi-linkedin"></i>
+                    <a href="#" class="text-decoration-none text-light fs-3" target="_blank">
+                        <i class="bi bi-twitter"></i>
                     </a>
-                    <a href="https://github.com/eOrrego" class="text-decoration-none" target="_blank">
-                        <i class="bi bi-github"></i>
+                    <a href="#" class="text-decoration-none text-light fs-3" target="_blank">
+                        <i class="bi bi-tiktok"></i>
                     </a>
                 </div>
             </section>
             <section class="col-sm-12 col-md-4 m-auto d-none d-md-block">
-                <div>
-                    <h5>Informacion</h5>
-                </div>
-                <div>
-                    <ul>
-                        <li>Nota legal</li>
-                        <li>Politicas de privacidad</li>
-                    </ul>
-                </div>
+                <ul>
+                    <li class="list list-group-item bg-transparent text-light border-0 m-auto fw-bolder">Informacion
+                    </li>
+                    <a href="" class="text-decoration-none">
+                        <li class="list list-group-item bg-transparent text-light border-0 m-auto">Nota legal</li>
+                    </a>
+                    <a href="" class="text-decoration-none">
+                        <li class="list list-group-item bg-transparent text-light border-0 m-auto">Politicas de
+                            privacidad</li>
+                    </a>
+                </ul>
             </section>
+            <div class="row m-auto p-0 text-center fw-light">
+                <span class="text-dark mt-2">Copyright <a href="#" class="text-decoration-none text-muted"
+                        target="_blank">&copy;</a> 2022 <strong>Grupo IV elmejor</strong> - All Rights
+                    Reserved</span>
+            </div>
         </div>
     </footer>
     <!-- PIE FIN-->
+
+    <!-- Modal SUSCRIBIRME-->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header rounded-0">
+                    <h5 class="modal-title" id="staticBackdropLabel">Formulario de suscripción</h5>
+                    <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-md-4">
+                            <label for="validationDefault01" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="validationDefault01" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationDefault02" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="validationDefault02" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationDefaultUsername" class="form-label">Username</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                                <input type="text" class="form-control" id="validationDefaultUsername"
+                                    aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationDefault04" class="form-label">País</label>
+                            <select class="form-select" id="validationDefault04" required>
+                                <option selected disabled value="">Elegir país</option>
+                                <option value="1">Argentina</option>
+                                <option value="2">Bolivia</option>
+                                <option value="3">Brasil</option>
+                                <option value="4">Chile</option>
+                                <option value="5">Colombia</option>
+                                <option value="6">Ecuador</option>
+                                <option value="7">Paraguay</option>
+                                <option value="8">Perú</option>
+                                <option value="9">Uruguay</option>
+                                <option value="10">Venezuela</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                    Desea recibir notificaciones por E-mail.
+                                </label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked1">
+                                <label class="form-check-label" for="flexSwitchCheckChecked1">Novedades.</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
+                                <label class="form-check-label" for="invalidCheck3">
+                                    Acepta terminos y condiciones.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn rounded-0 fw-bolder" type="submit">ENVIAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery -->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.min.js">
@@ -362,9 +398,9 @@
     <script>
         $(window).scroll(function () {
             if ($("#menu").offset().top > 56) {
-                $("#menu").addClass("bg-dark");
+                $("#menu").addClass("bgNavbar");
             } else {
-                $("#menu").removeClass("bg-dark");
+                $("#menu").removeClass("bgNavbar");
             }
         });
     </script>
