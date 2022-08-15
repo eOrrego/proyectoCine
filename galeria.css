@@ -108,25 +108,6 @@ h1 {
     position: absolute;
 }
 
-.cerrar {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    align-items: center;
-    background: #fff;
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    border: rgba(179, 164, 164, 0.486);
-    margin-left: 50%;
-    margin-top: 15%;
-}
-
-.cerrar:hover {
-    box-shadow: 5px 5px 10px rgb(34, 34, 34);
-    transform: translateY(-5%);
-}
-
 .bg-dark {
     transition: all 1s ease;
 }
@@ -173,15 +154,6 @@ body {
     background-color: #ffffff;
 }
 
-.carousel-item button {
-    background-color: #db0000;
-    color: #ffffff;
-}
-
-.carousel-item button:hover {
-    background-color: #ffffff;
-    color: #db0000;
-}
 
 .card-body a {
     background-color: #db0000;
@@ -203,15 +175,6 @@ body {
     color: #db0000;
 }
 
-.carruselCine .carousel-inner img {
-    width: 100%;
-    height: 40em;
-    object-fit: cover;
-}
-
-.carruselCine .carousel-caption {
-    background-color: #00000069;
-}
 
 
 footer {
