@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #db0000;
+}
+
+main {
+    text-align: center;
+    display: flexbox;
+}
+
+h1 {
+    margin: auto;
+    width: 50%;
+}
+
+img {
+    width: 20%;
+    position: relative;
+    animation-name: loco;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loco {
+    0% {
+        top: 0px;
+        transform: rotate(360deg);
+    }
+
+    50% {
+        top: 200px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}

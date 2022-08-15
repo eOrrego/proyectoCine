@@ -192,6 +192,9 @@ footer {
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     body {}
+    .carruselCine .carousel-inner img{
+        height: 100vh;
+    }
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
@@ -220,7 +223,7 @@ footer {
 
     .carruselCine img {
         width: 100%;
-        height: 40em;
+        height: 100vh;
         object-fit: cover;
     }
 
