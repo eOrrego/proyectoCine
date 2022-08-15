@@ -177,3 +177,9 @@ h1 {
 .btn a:hover {
     color: #db0000;
 }
+@media (min-width: 576px) {
+    .btn   {display: flex!important;
+        justify-content: center;
+        align-items: flex-end;
+        padding-top: 2px;
+    }}
