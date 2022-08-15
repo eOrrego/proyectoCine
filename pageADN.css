@@ -3,24 +3,25 @@ body {
 }
 .footerTeam i{
     color:#db0000;
+    
 }
 
-.footerTeam i:hover{
+.footerTeam i:hover {
     color: #ffffff;
 }
 
-main{
+main {
     background-color: #000000;
     color: #ffffff;
 }
 
-.imgBanner img{
+.imgBanner img {
     width: 100%;
     height: 40em;
-    object-fit:cover ;
+    object-fit: cover;
 }
 
-.team h1{
+.team h1 {
     color: #db0000;
     border-bottom: 2px solid #db0000;
 }
@@ -30,7 +31,7 @@ main{
     transition: all 0.5s ease;
 }
 
-.imgTeam img{
+.imgTeam img {
     border: 2px solid;
     border-color: #db0000;
 }
