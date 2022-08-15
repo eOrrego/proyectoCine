@@ -1,33 +1,18 @@
-html {
-   background-color: #000000;
-}
 .conteiner {
     background-color: #000000;
     padding: 15pxs;
 }
+
 .one {
     height: 100vh;
     width: 100%;
-} 
-/* .logo {
-    text-align: center;
-    width: 220px;
-    height: 110px;
-} */
-.bt {
-    text-align: center;
-    background-color: #bd0000;
-    border: 1px solid;
-    border-radius: 5px;
-    margin: 15px;
-    padding: 20px 35px;
-    color: #fff;
-    text-shadow: #00000044;
-}
-.bt:hover {
-    transform: translateY(-3%);
 }
 
 .decoration {
     text-decoration: none;
+}
+
+#menu {
+    background-color: #000000bb;
+    transition: all 0.5s ease;
 }
