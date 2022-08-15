@@ -18,6 +18,7 @@
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./galeria.css">
+    <link rel="stylesheet" href="index.css">
 
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/dc993abe5e.js" crossorigin="anonymous"></script>
@@ -26,13 +27,14 @@
 </head>
 
 <body class="container-fluid">
+    <!-- CABECERA INICIO-->
     <header>
         <!-- NAVBAR INICIO-->
         <section class="navbarCine">
             <nav id="menu" class="navbar navbar-expand-lg navbar-dark">
                 <div class="container">
                     <a class="navbar-brand animate__animated animate__heartBeat" href="./index.html">
-                        <img class="img-fluid" src="./img/logo.png" alt="Logo Adam Sandler" width="150">
+                        <img class="img-fluid" src="./img/logoft.png" alt="Logo Adam Sandler" width="150">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -55,12 +57,13 @@
                                     </li>
                                     <li><a class="dropdown-item fs-5 fw-bolder" href="./page404.html">Fan Club</a>
                                     </li>
-                                    <li><a class="dropdown-item fs-5 fw-bolder" href="#">Acerca de Nosotros</a></li>
+                                    <li><a class="dropdown-item fs-5 fw-bolder" href="./pageADN.html">Acerca de
+                                            Nosotros</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item mx-2">
                                 <a class="nav-link text-light fs-5" aria-current="page"
-                                    href="./page404.html"><strong>BIOGRAFIA</strong></a>
+                                    href="./pageone.html"><strong>BIOGRAFIA</strong></a>
                             </li>
                             <li class="nav-item mx-2">
                                 <a class="nav-link text-light fs-5" aria-current="page"
@@ -68,7 +71,8 @@
                             </li>
                         </ul>
                         <div id="buttonNav" class="d-grid gap-2 d-lg-block animate__animated animate__heartBeat">
-                            <a href="#link" class="btn fw-bolder mx-lg-1 rounded-0" role="button">SUSCRIBIRME</a>
+                            <a href="#link" class="btn fw-bolder mx-lg-1 rounded-0" role="button" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">SUSCRIBIRSE</a>
                             <a href="./login.html" class="btn fw-bolder mx-lg-1 rounded-0" role="button">LOGIN</a>
                         </div>
                     </div>
@@ -77,81 +81,20 @@
         </section>
         <!-- NAVBAR FIN-->
         <!-- CARRUSEL INICIO-->
-        <section class="carruselCine">
-            <img src="./img/1920x700_03.png" class="img-fluid d-block d-lg-none" alt="...">
-            <div id="carouselExampleCaptions" class="carousel carousel-dark slide carousel-fade d-none d-lg-block"
-                data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner user-select-none">
-                    <div class="carousel-item active">
-                        <img src="./img/1920x700_03.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption">
-                            <h5 class="bg-transparent text-light fs-2 fw-bold animate__animated animate__rubberBand">
-                                BIOGRAFÍA</h5>
-                            <p class="bg-transparent text-light fs-5 animate__animated animate__tada">Adam Sandler, es
-                                un actor, guionista y productor de cine estadounidense</p>
-                            <a href="./pageone.html">
-                                <button type="button"
-                                    class="btn btn-lg fw-bolder rounded-0 animate__animated animate__heartBeat">VER
-                                    MAS</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/sandlerPeliculas.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption">
-                            <h5 class="bg-transparent text-light fs-2 fw-bold animate__animated animate__rubberBand">
-                                PELICULAS</h5>
-                            <p class="bg-transparent text-light fs-5 animate__animated animate__tada">Galeria con las
-                                peliculas mas vistas de Adam Sandler</p>
-                            <a href="./pagegallery.html">
-                                <button type="button"
-                                    class="btn btn-lg fw-bolder rounded-0 animate__animated animate__heartBeat">VER
-                                    MAS</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/hustleNetflix.jpeg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption">
-                            <h5 class="bg-transparent text-light fs-2 fw-bold animate__animated animate__rubberBand">
-                                HUSTLE - NETFLIX</h5>
-                            <p class="bg-transparent text-light fs-5 animate__animated animate__tada">El nuevo drama
-                                deportivo de Adam Sandler</p>
-                            <a href="./page404.html">
-                                <button type="button"
-                                    class="btn btn-lg fw-bolder rounded-0 animate__animated animate__heartBeat">VER
-                                    MAS</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+        <section class="imgBanner ">
+            <img src="./img/sandlerGaleria.jpg" class="img-fluid d-block" alt="...">
         </section>
         <!-- CARRUSEL FIN-->
     </header>
+    <!-- CABECERA FIN-->
+    <!-- MAIN INICIO-->
     <main class="container-fluid">
         <div class="row p-1 mt-1">
-            <section>
-                <h2 class="m-5 text-center">Algunas de las películas de Adam Sandler ordenadas de peor a mejor</h2>
-                <h6 class="m-5 text-center">Aunque Adam ha grabado bastantes películas sin relevancia , también tiene en su curriculum algunas verdaderas joyas. <br> Recordamos algunas de peor a mejor.</h6>
+            <section class="galModal">
+                <h2 class="text-center m-2 m-lg-5">Algunas de las películas de Adam Sandler ordenadas de peor a mejor
+                </h2>
+                <h6 class="text-center m-2 m-lg-5">Aunque Adam ha grabado bastantes películas sin relevancia , también
+                    tiene en su curriculum algunas verdaderas joyas. <br> Recordamos algunas de peor a mejor.</h6>
                 <ul class="galeria">
                     <li><a href="#imgMo1" id="img1"><img src="./imagenes/1498163681-02-ridiculous-six-xlg.jpg"
                                 alt="imagegallery"></a></li>
@@ -396,9 +339,9 @@
     <!-- MAIN FIN-->
     <!-- PIE INICIO-->
     <footer class="container-fluid">
-        <div class="row p-2 m-auto">
+        <div class="row p-2 m-auto text-center">
             <section class="col-sm-12 col-md-4 m-auto">
-                <img src="./img/logo.png" alt="" class="img-fluid d-block w-50 m-auto">
+                <img src="./img/logoft.png" alt="" class="img-fluid d-block w-50 m-auto">
             </section>
             <section class="footerIcon col-sm-12 col-md-4 text-center m-auto">
                 <div class="row">
@@ -441,6 +384,78 @@
     </footer>
     <!-- PIE FIN-->
 
+    <!-- Modal SUSCRIBIRME-->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header rounded-0">
+                    <h5 class="modal-title" id="staticBackdropLabel">Formulario de suscripción</h5>
+                    <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-md-4">
+                            <label for="validationDefault01" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="validationDefault01" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationDefault02" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="validationDefault02" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationDefaultUsername" class="form-label">Username</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                                <input type="text" class="form-control" id="validationDefaultUsername"
+                                    aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationDefault04" class="form-label">País</label>
+                            <select class="form-select" id="validationDefault04" required>
+                                <option selected disabled value="">Elegir país</option>
+                                <option value="1">Argentina</option>
+                                <option value="2">Bolivia</option>
+                                <option value="3">Brasil</option>
+                                <option value="4">Chile</option>
+                                <option value="5">Colombia</option>
+                                <option value="6">Ecuador</option>
+                                <option value="7">Paraguay</option>
+                                <option value="8">Perú</option>
+                                <option value="9">Uruguay</option>
+                                <option value="10">Venezuela</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                    Desea recibir notificaciones por E-mail.
+                                </label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked1">
+                                <label class="form-check-label" for="flexSwitchCheckChecked1">Novedades.</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
+                                <label class="form-check-label" for="invalidCheck3">
+                                    Acepta terminos y condiciones.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn rounded-0 fw-bolder" type="submit">ENVIAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- jQuery -->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.min.js">
     </script>
@@ -464,7 +479,7 @@
             }
         });
     </script>
-    
-    </body>
+
+</body>
 
 </html>

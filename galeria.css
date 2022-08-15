@@ -1,10 +1,21 @@
 body {
     margin: 0;
-    padding: 0px!important;
+    padding: 0px !important;
 }
 
 h1 {
     text-align: center;
+}
+
+.imgBanner img {
+    width: 100%;
+    height: 40em;
+    object-fit: cover;
+}
+
+#menu {
+    background-color: #000000bb;
+    transition: all 0.5s ease;
 }
 
 .galeria {
@@ -35,11 +46,11 @@ h1 {
     border: 2px solid #fff;
 }
 
-.modal {
+.galModal .modal {
     display: none;
 }
 
-.modal:target {
+.galModal .modal:target {
     display: block;
     position: fixed;
     background: rgba(0, 0, 0, 0.8);
@@ -49,7 +60,7 @@ h1 {
     height: 100%;
 }
 
-.modal h3 {
+.galModal .modal h3 {
     color: #fff;
     font-size: 30px;
     text-align: center;
@@ -87,10 +98,6 @@ h1 {
     display: block;
 }
 
-/* img {
-    border: 2px solid #fff;
-} */
-
 .bg-p-imgMo {
     display: block;
     background-color: rgba(0, 0, 0, 0.466);
@@ -120,7 +127,7 @@ h1 {
     transform: translateY(-5%);
 }
 
-.bg-dark{
+.bg-dark {
     transition: all 1s ease;
 }
 
@@ -128,92 +135,92 @@ body {
     padding: 0px !important;
 }
 
-#menu{
+#menu {
     position: fixed;
     z-index: 999;
     width: 100%;
 }
 
-#menu ul li a:hover{
-    color: #db0000!important;
+#menu ul li a:hover {
+    color: #db0000 !important;
 }
 
-#buttonNav a{
+#buttonNav a {
     background-color: #db0000;
     color: #ffffff;
 }
 
-#buttonNav a:hover{
+#buttonNav a:hover {
     background-color: #ffffff;
     color: #db0000;
 }
 
 /* background NAVBAR */
-.bgNavbar{
+.bgNavbar {
     background-color: #000000cc;
     transition: all 0.5s ease;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     background-color: #000000cc;
 }
 
-.dropdown-menu li a{
+.dropdown-menu li a {
     color: #ffffff;
 }
 
-.dropdown-menu li a:hover{
+.dropdown-menu li a:hover {
     background-color: #ffffff;
 }
 
-.carousel-item button{
+.carousel-item button {
     background-color: #db0000;
     color: #ffffff;
 }
 
-.carousel-item button:hover{
+.carousel-item button:hover {
     background-color: #ffffff;
     color: #db0000;
 }
 
-.card-body a{
+.card-body a {
     background-color: #db0000;
     color: #ffffff;
 }
 
-.card-body a:hover{
+.card-body a:hover {
     background-color: #000000;
     color: #db0000;
 }
 
-.btnMenu a{
+.btnMenu a {
     background-color: #db0000;
     color: #ffffff;
 }
 
-.btnMenu a:hover{
+.btnMenu a:hover {
     background-color: #000000;
     color: #db0000;
 }
 
-.carruselCine .carousel-inner img{
+.carruselCine .carousel-inner img {
     width: 100%;
     height: 40em;
-    object-fit:cover ;
+    object-fit: cover;
 }
 
-.carruselCine .carousel-caption{
+.carruselCine .carousel-caption {
     background-color: #00000069;
 }
 
 
-footer{
+footer {
     background-color: #db0000;
     color: #ffffff;
 }
 
-.footerIcon i:hover{
-    color:#000000;
+.footerIcon i:hover {
+    color: #000000;
 }
 
 /* // X-Small devices (portrait phones, less than 576px)
@@ -253,7 +260,7 @@ footer{
 
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    #menu{
+    #menu {
         background-color: #000000bb;
         transition: all 0.5s ease;
     }

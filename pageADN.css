@@ -16,3 +16,18 @@ main{
     height: 40em;
     object-fit:cover ;
 }
+
+.team h1{
+    color: #db0000;
+    border-bottom: 2px solid #db0000;
+}
+
+#menu {
+    background-color: #000000bb;
+    transition: all 0.5s ease;
+}
+
+.imgTeam img{
+    border: 2px solid;
+    border-color: #db0000;
+}
