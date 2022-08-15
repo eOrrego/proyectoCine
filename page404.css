@@ -141,40 +141,39 @@ h1 {
     font-size: large;
     position: absolute;
     bottom: 15vmin;
-    padding: 3vmin 12vmin 3vmin 3vmin;
+    padding: 3vmin 1vmin 3vmin 3vmin;
     font-weight: 600;
     color: #ffffff;
 }
 
-/* .btn {
-width: 100px;height: 50px;
-background-color:rgb(86, 77,77)  ;
-border-radius: .3em;
-text-align: center;    
-font-family: "Poppins", sans-serif;
-font-size: 1.5em;font-weight: bold;
-color: #ffffff;
-line-height: 1.5em; */
-/* 
-} */
-.boxbtn {
-    position: fixed;
-    bottom: 30px;
-    right: 600px;
+.btnPosition {
+    font-family: "Montserrat", sans-serif;
+    font-size: large;
+    position: absolute;
+    bottom: 9vmin;
+    padding: 1vmin 1vmin 1vmin 1vmin;
+    font-weight: 600;
+
 }
 
 .btn {
-    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: large;
+    font-weight: 600;
+    border: 1px solid;
+    padding: 4px;
+}
+
+.btn a {
     text-decoration: none;
-    background: #142833;
-    color: #ffffff;
-    height: 50px;
-    width: 100px;
-    line-height: 20px;
-    text-align: center;
-    border-radius: 5px;
-    border-color: #142833;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 4);
-    transition: all 500ms ease;
-    font-size: medium
+    color: #000000;
+}
+
+.btn:hover {
+    background-color: #000000;
+    color: #db0000;
+}
+
+.btn a:hover {
+    color: #db0000;
 }
