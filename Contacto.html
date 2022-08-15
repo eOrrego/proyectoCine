@@ -8,38 +8,117 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="icon" type="image/jpg" href="./img/android-chrome-192x192.png"/>
+        <link rel="stylesheet" href="./contacto.css">
     <title>Contactenos</title>
 </head>
 
 <body>
-    <!-- Formulario para contactarnos -->
-    <div class="conteiner">
-        <div class="row one">
-            <div class="col-3">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7121.300486754478!2d-65.20713508129123!3d-26.819263146034633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c22cd274cf7%3A0xc9b23266e09ca55c!2sPlaza%20Urquiza!5e0!3m2!1ses!2sar!4v1660408551326!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                
+            <!-- NAVBAR INICIO-->
+            <section class="navbarCine">
+                <nav id="menu" class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container">
+                        <a class="navbar-brand animate__animated animate__heartBeat" href="./index.html">
+                            <img class="img-fluid" src="./img/logoft.png" alt="Logo Adam Sandler" width="150">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <ul class="user-select-none navbar-nav m-auto animate__animated animate__backInDown">
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link text-light active fs-5" aria-current="page"
+                                        href="./index.html"><strong>HOME</strong></a>
+                                </li>
+                                <li class="nav-item dropdown mx-2">
+                                    <a class="nav-link dropdown-toggle text-light fs-5" href="#" id="navbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <strong>SECCIONES</strong>
+                                    </a>
+                                    <ul class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item fs-5 fw-bolder" href="./pagegallery.html">Películas</a>
+                                        </li>
+                                        <li><a class="dropdown-item fs-5 fw-bolder" href="./page404.html">Fan Club</a>
+                                        </li>
+                                        <li><a class="dropdown-item fs-5 fw-bolder" href="./pageADN.html">Acerca de
+                                                Nosotros</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link text-light fs-5" aria-current="page"
+                                        href="./pageone.html"><strong>BIOGRAFÍA</strong></a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link text-light fs-5" aria-current="page"
+                                        href="#"><strong>CONTACTO</strong></a>
+                                </li>
+                            </ul>
+                            <div id="buttonNav" class="d-grid gap-2 d-lg-block animate__animated animate__heartBeat">
+                                <a href="#link" class="btn fw-bolder mx-lg-1 rounded-0" role="button" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">SUSCRIBIRSE</a>
+                                <a href="./login.html" class="btn fw-bolder mx-lg-1 rounded-0" role="button">LOGIN</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+            <!-- NAVBAR FIN-->
+    <!-- Dónde contactarnos -->
+    <main >
+        <section class=" d-flex " >
+            
+            <article class="row justify-content-between" >
+                <div class="col-lg-2">
+                <div id="mapaContacto" >
+                    <h3 class="text-light">Ubicacion</h3>
+              <iframe id="mapaContacto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.102220299916!2d-65.20939048556923!3d-26.836700883160397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses!2sar!4v1660579285904!5m2!1ses!2sar" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            </article>
+       <!-- Formulario para contactarnos --> 
+    <article  id="formulario-contacto" >
+        <div class="col-lg-10">
+            <h3>Contacto</h3>
+        <form class=" needs-validation mt-4" novalidate>
+           
+              <label for="validationCustom01" class="form-label">Apellido y Nombre </label>
+              <input type="text" class="form-control" id="validationCustom01" value="Mark Otto" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
             </div>
         </div>
-        <div class="row text-center col-6">
-            <div class="row">
-                <div class="col">
-                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col-lg-10 w-100">
+              <label for="validationCustomUsername" class="form-label w">e-mail</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Please choose a username.
                 </div>
-                <div class="col">
-                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                </div>
+              </div>
             </div>
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">E-mail</label>
+            <div class="mb-3 col-lg-10 w-100">
+                <label for="exampleFormControlTextarea1" class="form-label text-start">Deja tu comentario.</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
+              </div>
+            <div class="col-lg-6">
+              <button class="btn btn-primary" type="submit">Enviar</button>
             </div>
-            <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                <label for="floatingTextarea">Tu consulta</label>
+          </form>
+            <div class="col-lg-6 mt-5 LogoContacto">
+                <i class="fa-brands fa-facebook-f mx-2 "></i>
+                <i class="fa-brands fa-twitter mx-2 "></i>
+            <i class="fa-brands fa-instagram mx-2 "></i>
             </div>
-        </div>  
-    </div>    
 
+    </article>
+    </section>
+    </main>
+  <script src="bootstrap-5.2.0-dist/js/bootstrap.min.js"></script> 
+  
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
