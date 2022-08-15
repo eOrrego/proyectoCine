@@ -2,83 +2,84 @@ body {
     padding: 0px !important;
 }
 
-#menu{
+#menu {
     position: fixed;
     z-index: 999;
     width: 100%;
 }
 
-#menu ul li a:hover{
-    color: #db0000!important;
+#menu ul li a:hover {
+    color: #db0000 !important;
 }
 
-#buttonNav a{
+#buttonNav a {
     background-color: #db0000;
     color: #ffffff;
 }
 
-#buttonNav a:hover{
+#buttonNav a:hover {
     background-color: #ffffff;
     color: #db0000;
 }
 
 /* background NAVBAR */
-.bgNavbar{
+.bgNavbar {
     background-color: #000000cc;
     transition: all 0.5s ease;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     background-color: #000000cc;
 }
 
-.dropdown-menu li a{
+.dropdown-menu li a {
     color: #ffffff;
 }
 
-.dropdown-menu li a:hover{
+.dropdown-menu li a:hover {
     background-color: #ffffff;
 }
 
-.carousel-item button{
+.carousel-item button {
     background-color: #db0000;
     color: #ffffff;
 }
 
-.carousel-item button:hover{
+.carousel-item button:hover {
     background-color: #ffffff;
     color: #db0000;
 }
 
-.card-body a{
+.card-body a {
     background-color: #db0000;
     color: #ffffff;
 }
 
-.card-body a:hover{
+.card-body a:hover {
     background-color: #000000;
     color: #db0000;
 }
 
-.btnMenu a{
+.btnMenu a {
     background-color: #db0000;
     color: #ffffff;
 }
 
-.btnMenu a:hover{
+.btnMenu a:hover {
     background-color: #000000;
     color: #db0000;
 }
 
-.carruselCine .carousel-inner img{
+.carruselCine .carousel-inner img {
     width: 100%;
     height: 40em;
-    object-fit:cover ;
+    object-fit: cover;
 }
 
-.carruselCine .carousel-caption{
+.carruselCine .carousel-caption {
     background-color: #00000069;
 }
+
 .carousel-caption {
     position: absolute;
     right: 0%;
@@ -90,86 +91,89 @@ body {
     text-align: center;
 
 }
+
 .card {
     margin-top: 10px;
     padding: 1px;
     box-shadow: 5px 5px 10px rgb(34 34 34);
 }
-.contentMain .card img{
+
+.contentMain .card img {
     width: 100%;
     height: 100%;
 }
 
-.modal-content{
+.modal-content {
     background-color: #000000af;
     color: #ffffff;
 }
 
-.modal-header, .modal-footer{
+.modal-header,
+.modal-footer {
     background-color: #db0000af;
 }
 
-.modal-body button{
+.modal-body button {
     background-color: #db0000;
     color: #ffffff;
 }
 
-.modal-body button:hover{
+.modal-body button:hover {
     background-color: #ffffff;
     color: #db0000;
 }
 
-.modal-footer button{
+.modal-footer button {
     background-color: #db0000;
     color: #ffffff;
 }
 
-.modal-footer button:hover{
+.modal-footer button:hover {
     background-color: #ffffff;
     color: #db0000;
 }
 
-.modal-body .form-check .form-check-input{
+.modal-body .form-check .form-check-input {
     background-color: #db0000;
 }
 
-.aside .card{
+.aside .card {
     background-color: #000000;
     color: #ffffff;
 }
 
-.aside .nav-link{
+.aside .nav-link {
     background-color: #db0000;
     color: #ffffff;
 }
 
-.aside .nav-link:hover{
+.aside .nav-link:hover {
     background-color: #000000;
     color: #db0000;
 }
 
-.aside .nav-link:focus{
+.aside .nav-link:focus {
     color: #db0000;
     background-color: #ffffff;
 }
 
-.aside .card-body button{
+.aside .card-body button {
     background-color: #db0000;
     color: #ffffff;
 }
 
-.aside .card-body button:hover{
+.aside .card-body button:hover {
     background-color: #ffffff;
     color: #db0000;
 }
 
-footer{
+footer {
     background-color: #db0000;
     color: #ffffff;
 }
 
-.footerIcon i:hover{
-    color:#000000;
+.footerIcon i:hover {
+    color: #000000;
 }
 
 /* // X-Small devices (portrait phones, less than 576px)
@@ -209,9 +213,15 @@ footer{
 
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    #menu{
+    #menu {
         background-color: #000000bb;
         transition: all 0.5s ease;
+    }
+
+    .carruselCine img {
+        width: 100%;
+        height: 40em;
+        object-fit: cover;
     }
 
 }
