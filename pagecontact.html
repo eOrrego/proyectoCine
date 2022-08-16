@@ -17,7 +17,7 @@
 
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="./login.css">
+  <link rel="stylesheet" href="./pagecontac.css">
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,7 @@
 <body>
 
   <!-- CABECERA INICIO-->
-  <header>
+  <header class="container-fluid">
     <!-- NAVBAR INICIO-->
     <section class="navbarCine">
       <nav id="menu" class="navbar navbar-expand-lg navbar-dark">
@@ -87,75 +87,28 @@
 
   <main>
     <div class="conteiner">
-      <section class="container-fluid">
+      <section class="container">
         <div class="row one">
-          <div class="col-12 col-lg-6">
-            <img class="one d-none d-lg-block " src="./img/sandlerLogin.jpg" alt="">
+          <div class="col-12 col-lg-6 d-none d-lg-block text-center m-auto">
+            <h3 class="text-danger fw-bolder mb-5">CONTÁCTENOS</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.102370777448!2d-65.20939048436118!3d-26.836696096503207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1660605605180!5m2!1ses-419!2sar"
+              width="100%" height="500" allowfullscreen="" loading="lazy" class="d-none d-lg-block"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-          <div class="col-9 col-md-6 col-lg-4 text-light m-auto">
-            <div class="d-flex justify-content-center">
-              <img src="./img/logoft.png" class="logo" alt="adam sandler">
-            </div>
-            <form>
-              <legend>Iniciar sección:</legend>
-              <div class="m-2">
-                <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div class="formBg col-12 col-lg-6 m-auto">
+            <img src="./img/salndreContact.png" alt="" class="img-fluid w-50 ms-5">
+            <form action="#" class="p-3">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
               </div>
-              <div class="m-2">
-                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-                <span id="passwordHelpInline" class="form-text">
-                </span>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
-              <div class="formBtn form-check m-2">
-                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                <label class="form-check-label" for="autoSizingCheck">
-                  Recuerdame
-                </label>
-
-                <a href="" class="d-block" data-bs-toggle="modal" data-bs-target="#modal">Olvidé mi
-                  contraseña.</a>
-                <div class="m-3 text-center">
-                  <button type="button" class="btn rounded-0 fw-bolder">Iniciar sección</button>
-                </div>
-              </div>
-              <!-- Login con redes sociales -->
-              <div class="container m-auto">
-                <div class="row text-center">
-                  <div class="col-12">Iniciar con:</div>
-                  <div class="row">
-                    <div class="col-6">
-                      <button class="btn btn-outline-primary m-auto my-3 w-100">
-                        <div class="row align-items-center">
-                          <div class="col-3">
-                            <img
-                              src="./img/fbIcon.png"
-                              width="30" alt="">
-                          </div>
-                          <div class="col-9">
-                            <a href="https://www.facebook.com/" target="_blank"
-                              class="text-decoration-none p-1 text-light fw-bolder">Facebook</a>
-                          </div>
-                        </div>
-                      </button>
-                    </div>
-                    <div class="col-6">
-                      <button class="btn btn-outline-danger m-auto my-3 w-100">
-                        <div class="row align-items-center">
-                          <div class="col-3">
-                            <img src="./img/googleIcon.png"
-                              width="30" alt="">
-                          </div>
-                          <div class="col-9">
-                            <a href="https://mail.google.com/" target="_blank"
-                              class="text-decoration-none p-1 text-light fw-bolder">Google</a>
-                          </div>
-                        </div>
-                      </button>
-                    </div>
-                  </div>
-                </div>
+              <div class="btnBg mb-3">
+                <button type="submit" class="btn rounded-0 fw-bolder">ENVIAR</button>
               </div>
             </form>
           </div>
@@ -163,37 +116,6 @@
       </section>
     </div>
   </main>
-
-  <!--MODAL olvidé mi contraseña-->
-  <div class="modal fade" aria-hidden="true" aria-labelledby="modal-inicio" id="modal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Olvide mi contraseña</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="form-floating mb-3">
-            <div class="modal-body">
-              <p>Le enviaremos un correo electrónico sobre más intrucciones a seguir para restablecer tu
-                contraseña
-              </p>
-            </div>
-            <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-              <label for="floatingInput" class="text-dark fw-bolder">E-mail</label>
-            </div>
-          </div>
-          <div class="col-auto">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn rounded-0 fw-bolder" data-bs-dismiss="modal">CANCELAR</button>
-            <button type="button" class="btn rounded-0 fw-bolder"="">ENVIAR</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Modal SUSCRIBIRME-->
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
