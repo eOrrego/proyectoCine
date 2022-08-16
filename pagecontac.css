@@ -1,0 +1,27 @@
+.conteiner {
+    background-color: #000000;
+}
+
+.one {
+    height: 100vh;
+    width: 100%;
+}
+
+#menu {
+    background-color: #000000bb;
+    transition: all 0.5s ease;
+}
+
+.btnBg button{
+    background-color:#ffffff;
+    color: #000000;
+}
+
+.btnBg button:hover{
+    background-color:#000000;
+    color: #ffffff;
+}
+
+.formBg form{
+    background-color: #db0000;
+}
